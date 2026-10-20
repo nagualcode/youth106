@@ -1,0 +1,29 @@
+uuid = "c1a958b4-24fc-5737-94d9-f88e40a939f7"
+name = "A63 Frontier Organ"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.622
+lfo_delay = 0.1181
+dco_range = 1
+dco_lfo = 0.0267
+dco_pwm = 0.8095
+pwm_mode = 0
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.2283
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.5433
+vcf_res = 0.4252
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 0.4094
+vca_mode = 1
+vca_level = 1.0
+env_a = 0.0
+env_d = 0.0
+env_s = 1.0
+env_r = 0.0
+chorus = 0

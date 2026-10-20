@@ -1,0 +1,29 @@
+uuid = "163f191d-8ada-5493-85bc-29816ad14f35"
+name = "B33 Lute"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4094
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0171
+dco_pwm = 1.0
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.2283
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.2756
+vcf_lfo = 0.0
+vcf_kbd = 0.6772
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0
+env_d = 0.378
+env_s = 0.2677
+env_r = 0.685
+chorus = 0

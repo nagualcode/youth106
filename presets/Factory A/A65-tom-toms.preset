@@ -1,0 +1,29 @@
+uuid = "0e729dbb-3069-5f00-82cc-1200adf513e5"
+name = "A65 Tom Toms"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4882
+lfo_delay = 0.126
+dco_range = 0
+dco_lfo = 0.0884
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.4567
+dco_noise = 1.0
+hpf = 0
+vcf_freq = 0.4173
+vcf_res = 0.0315
+vcf_env_pol = 0
+vcf_env = 0.315
+vcf_lfo = 0.0
+vcf_kbd = 0.1654
+vca_mode = 0
+vca_level = 0.7953
+env_a = 0.0
+env_d = 0.2362
+env_s = 0.1181
+env_r = 0.315
+chorus = 0

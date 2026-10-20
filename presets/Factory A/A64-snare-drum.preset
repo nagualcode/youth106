@@ -1,0 +1,29 @@
+uuid = "193b9a79-bcc9-58fa-8c3b-21635146f21b"
+name = "A64 Snare Drum"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4094
+lfo_delay = 0.2126
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 1
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.5039
+dco_noise = 0.7165
+hpf = 1
+vcf_freq = 0.7402
+vcf_res = 0.0866
+vcf_env_pol = 0
+vcf_env = 0.1339
+vcf_lfo = 0.0
+vcf_kbd = 0.0
+vca_mode = 0
+vca_level = 0.7953
+env_a = 0.0
+env_d = 0.1969
+env_s = 0.0
+env_r = 0.2362
+chorus = 0

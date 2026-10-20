@@ -1,0 +1,29 @@
+uuid = "a37f64a3-b701-59e9-b74d-118b2a589a94"
+name = "B52 Organ 2"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6378
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.9905
+pwm_mode = 1
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.4252
+vcf_res = 0.8346
+vcf_env_pol = 0
+vcf_env = 0.0551
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 1
+vca_level = 0.622
+env_a = 0.0
+env_d = 0.0
+env_s = 0.0
+env_r = 0.0
+chorus = 1

@@ -1,0 +1,29 @@
+uuid = "0ee0870c-f8c3-5160-96b8-36e7f4f7746e"
+name = "B18 Noise Sweep"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 1.0
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 1.0
+hpf = 0
+vcf_freq = 0.0157
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.6063
+vcf_lfo = 0.0
+vcf_kbd = 0.8189
+vca_mode = 0
+vca_level = 0.7244
+env_a = 0.1102
+env_d = 0.6142
+env_s = 0.8504
+env_r = 0.9449
+chorus = 0

@@ -1,0 +1,29 @@
+uuid = "6ed7e418-f209-5778-bb4c-a364d561bbd6"
+name = "A83 Drum Booms"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.9714
+pwm_mode = 1
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.3622
+dco_noise = 1.0
+hpf = 0
+vcf_freq = 0.3307
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.2677
+vcf_lfo = 0.0
+vcf_kbd = 0.4567
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0
+env_d = 0.2835
+env_s = 0.1181
+env_r = 0.3858
+chorus = 0

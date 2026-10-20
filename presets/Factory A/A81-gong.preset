@@ -1,0 +1,29 @@
+uuid = "c4209a99-3bdd-5f0d-a26d-f8da13f76056"
+name = "A81 Gong"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 1.0
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.9714
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.4409
+hpf = 1
+vcf_freq = 0.5512
+vcf_res = 0.8425
+vcf_env_pol = 1
+vcf_env = 0.0394
+vcf_lfo = 0.0
+vcf_kbd = 0.5669
+vca_mode = 0
+vca_level = 0.7165
+env_a = 0.0236
+env_d = 0.378
+env_s = 1.0
+env_r = 0.7717
+chorus = 1

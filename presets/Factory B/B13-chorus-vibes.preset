@@ -1,0 +1,29 @@
+uuid = "0b4ea722-ddb3-53fd-b997-36f3b343fb91"
+name = "B13 Chorus Vibes"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5669
+lfo_delay = 0.3543
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.0787
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.4646
+vcf_lfo = 0.0
+vcf_kbd = 0.1811
+vca_mode = 0
+vca_level = 0.6929
+env_a = 0.0
+env_d = 0.7008
+env_s = 0.3701
+env_r = 0.5827
+chorus = 1

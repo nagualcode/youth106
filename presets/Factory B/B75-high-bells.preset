@@ -1,0 +1,29 @@
+uuid = "22e2f6e1-93b5-58ba-a360-743e9d2bdd87"
+name = "B75 High Bells"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.2362
+lfo_delay = 0.3543
+dco_range = 2
+dco_lfo = 1.0
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 3
+vcf_freq = 0.5984
+vcf_res = 1.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 0.874
+env_a = 0.0
+env_d = 0.1732
+env_s = 0.4094
+env_r = 0.4646
+chorus = 0

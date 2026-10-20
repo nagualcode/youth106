@@ -1,0 +1,19 @@
+[vendor]
+name = "Jardim Sonoro"
+id = "com.jardimsonoro"
+url = "https://github.com/nagualcode/youth106"
+au_manufacturer = "JdSn"
+
+[[plugin]]
+name = "Youth106"
+bundle_id = "youth106"
+crate = "youth106"
+category = "instrument"
+description = """
+Roland Juno-106 emulation: six-voice DCO polysynth with the IR3109 \
+ladder VCF, firmware-accurate envelopes and LFO, and the MN3009 BBD \
+chorus.
+"""
+fourcc = "Y106"
+au_tag = "Synthesizer"
+vst3_subcategory = "Instrument|Synth"

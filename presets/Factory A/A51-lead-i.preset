@@ -1,0 +1,29 @@
+uuid = "6dac29f4-51db-5a5a-9f3a-9c2247359e90"
+name = "A51 Lead I"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5669
+lfo_delay = 0.6929
+dco_range = 1
+dco_lfo = 0.2866
+dco_pwm = 0.0
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.315
+vcf_res = 0.7638
+vcf_env_pol = 0
+vcf_env = 0.2835
+vcf_lfo = 0.0
+vcf_kbd = 0.4094
+vca_mode = 1
+vca_level = 0.7795
+env_a = 0.0
+env_d = 0.3543
+env_s = 0.5748
+env_r = 0.0
+chorus = 0

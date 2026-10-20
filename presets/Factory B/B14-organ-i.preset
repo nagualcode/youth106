@@ -1,0 +1,29 @@
+uuid = "b6d59ece-7641-544e-9ee6-2d1293fdc777"
+name = "B14 Organ I"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.3543
+lfo_delay = 0.3307
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.6952
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.7638
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.4724
+vcf_res = 0.5669
+vcf_env_pol = 0
+vcf_env = 0.1102
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 1
+vca_level = 0.4567
+env_a = 0.0
+env_d = 0.0
+env_s = 0.0
+env_r = 0.0
+chorus = 2

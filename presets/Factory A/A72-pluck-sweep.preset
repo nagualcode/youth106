@@ -1,0 +1,29 @@
+uuid = "8929c83a-34df-595a-9593-1dcd5687bae4"
+name = "A72 Pluck Sweep"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5354
+lfo_delay = 0.378
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.6476
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.9843
+dco_noise = 0.0
+hpf = 2
+vcf_freq = 0.4724
+vcf_res = 0.874
+vcf_env_pol = 0
+vcf_env = 0.0709
+vcf_lfo = 0.0472
+vcf_kbd = 0.7717
+vca_mode = 0
+vca_level = 0.3543
+env_a = 0.0
+env_d = 0.7165
+env_s = 0.0
+env_r = 0.6063
+chorus = 2

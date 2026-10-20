@@ -1,0 +1,29 @@
+uuid = "fa02c10c-7d46-5bda-8d64-e0b282eaeff5"
+name = "A76 Dark Synth Piano"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 1.0
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 1.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.4409
+vcf_res = 0.6772
+vcf_env_pol = 1
+vcf_env = 0.0472
+vcf_lfo = 0.0
+vcf_kbd = 0.5591
+vca_mode = 0
+vca_level = 0.622
+env_a = 0.0
+env_d = 0.3701
+env_s = 0.0
+env_r = 0.3937
+chorus = 2

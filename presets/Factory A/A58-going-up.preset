@@ -1,0 +1,29 @@
+uuid = "1c6fbde7-5438-5d86-a169-41d1b0b60349"
+name = "A58 Going Up"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.9524
+pwm_mode = 1
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.2205
+hpf = 1
+vcf_freq = 0.622
+vcf_res = 1.0
+vcf_env_pol = 1
+vcf_env = 0.2913
+vcf_lfo = 0.0
+vcf_kbd = 0.5118
+vca_mode = 0
+vca_level = 0.5906
+env_a = 0.0
+env_d = 0.8504
+env_s = 0.1417
+env_r = 1.0
+chorus = 0

@@ -1,0 +1,29 @@
+uuid = "2fd6ceae-bacf-50b7-bce8-75ae3eb20a86"
+name = "A17 Choir"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4646
+lfo_delay = 0.1102
+dco_range = 1
+dco_lfo = 0.1769
+dco_pwm = 0.2381
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 2
+vcf_freq = 0.4646
+vcf_res = 0.7402
+vcf_env_pol = 0
+vcf_env = 0.0157
+vcf_lfo = 0.0
+vcf_kbd = 0.4882
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.5354
+env_d = 0.0866
+env_s = 1.0
+env_r = 0.378
+chorus = 1

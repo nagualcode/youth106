@@ -1,0 +1,29 @@
+uuid = "99ac9fcc-d536-52da-957a-0fd13b213f5c"
+name = "B16 Recorder"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6142
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.0762
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.0472
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.3622
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0394
+env_d = 0.1654
+env_s = 1.0
+env_r = 0.2362
+chorus = 0

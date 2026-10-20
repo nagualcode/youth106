@@ -1,0 +1,29 @@
+uuid = "59f8d13a-ddb3-5f67-9c52-0d834bcd7d58"
+name = "B32 Helicopter"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.8346
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.4571
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 1.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.6457
+vcf_res = 0.0394
+vcf_env_pol = 1
+vcf_env = 0.7323
+vcf_lfo = 1.0
+vcf_kbd = 0.0
+vca_mode = 0
+vca_level = 0.5669
+env_a = 0.0
+env_d = 0.0
+env_s = 0.2756
+env_r = 0.5984
+chorus = 2

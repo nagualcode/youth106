@@ -1,0 +1,29 @@
+uuid = "0bd987d1-fda8-59be-82c8-070ffd05623d"
+name = "B74 Violin (high)"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5591
+lfo_delay = 0.3543
+dco_range = 2
+dco_lfo = 0.3766
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.7008
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0236
+vcf_kbd = 0.9449
+vca_mode = 0
+vca_level = 0.6693
+env_a = 0.3386
+env_d = 0.3543
+env_s = 0.4488
+env_r = 0.2047
+chorus = 0

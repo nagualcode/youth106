@@ -1,0 +1,29 @@
+uuid = "5334f395-9c6f-5c92-8d86-848431615222"
+name = "A12 Brass Swell"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0472
+lfo_delay = 0.378
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.5333
+pwm_mode = 1
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.5512
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.3386
+vcf_res = 0.1339
+vcf_env_pol = 0
+vcf_env = 0.2047
+vcf_lfo = 0.0
+vcf_kbd = 0.6614
+vca_mode = 0
+vca_level = 0.5906
+env_a = 0.5039
+env_d = 0.9291
+env_s = 0.2992
+env_r = 0.2913
+chorus = 1

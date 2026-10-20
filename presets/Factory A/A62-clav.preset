@@ -1,0 +1,29 @@
+uuid = "69b223a7-8208-5c30-971c-317f360b8eb7"
+name = "A62 Clav."
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5197
+lfo_delay = 0.1181
+dco_range = 0
+dco_lfo = 0.0082
+dco_pwm = 0.9714
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.0551
+vcf_res = 0.0866
+vcf_env_pol = 0
+vcf_env = 0.6772
+vcf_lfo = 0.0157
+vcf_kbd = 0.0
+vca_mode = 1
+vca_level = 0.9449
+env_a = 0.0
+env_d = 0.3071
+env_s = 0.378
+env_r = 0.1102
+chorus = 1

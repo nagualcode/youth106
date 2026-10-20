@@ -1,0 +1,29 @@
+uuid = "da7dee82-8f84-57ef-bb65-3a276af64ba9"
+name = "A25 Donald Pluck"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5984
+lfo_delay = 0.1654
+dco_range = 2
+dco_lfo = 0.1038
+dco_pwm = 0.5429
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 1.0
+dco_noise = 0.0
+hpf = 3
+vcf_freq = 0.5748
+vcf_res = 0.8268
+vcf_env_pol = 1
+vcf_env = 0.1181
+vcf_lfo = 0.0
+vcf_kbd = 0.6142
+vca_mode = 1
+vca_level = 0.6457
+env_a = 0.0157
+env_d = 0.0394
+env_s = 0.3386
+env_r = 0.0787
+chorus = 0

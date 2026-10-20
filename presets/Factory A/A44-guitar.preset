@@ -1,0 +1,29 @@
+uuid = "8867a7f6-a3b8-59b2-8e9c-dd77ddd6d663"
+name = "A44 Guitar"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6772
+lfo_delay = 0.4567
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.619
+pwm_mode = 1
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.0945
+vcf_res = 0.1181
+vcf_env_pol = 0
+vcf_env = 0.5591
+vcf_lfo = 0.0
+vcf_kbd = 0.2362
+vca_mode = 0
+vca_level = 0.7559
+env_a = 0.0
+env_d = 0.4094
+env_s = 0.4252
+env_r = 0.2441
+chorus = 0

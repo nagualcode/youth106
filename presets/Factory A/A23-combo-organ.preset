@@ -1,0 +1,29 @@
+uuid = "ea2bd555-2599-528f-9a9d-363159066af6"
+name = "A23 Combo Organ"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5906
+lfo_delay = 0.1654
+dco_range = 2
+dco_lfo = 0.1038
+dco_pwm = 0.5429
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.4803
+dco_noise = 0.0
+hpf = 2
+vcf_freq = 0.4961
+vcf_res = 0.5512
+vcf_env_pol = 0
+vcf_env = 0.0315
+vcf_lfo = 0.0
+vcf_kbd = 0.8583
+vca_mode = 1
+vca_level = 0.7559
+env_a = 0.0
+env_d = 0.378
+env_s = 0.3386
+env_r = 0.3622
+chorus = 0

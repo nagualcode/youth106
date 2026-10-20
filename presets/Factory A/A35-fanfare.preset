@@ -1,0 +1,29 @@
+uuid = "0f5d663f-742f-5cca-bbf1-9b525231bb78"
+name = "A35 Fanfare"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.3701
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.6667
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.3937
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.3465
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.252
+vcf_lfo = 0.0
+vcf_kbd = 0.5276
+vca_mode = 0
+vca_level = 0.2598
+env_a = 0.5669
+env_d = 0.8189
+env_s = 0.5906
+env_r = 0.3858
+chorus = 1

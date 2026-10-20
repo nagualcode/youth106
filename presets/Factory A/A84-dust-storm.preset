@@ -1,0 +1,29 @@
+uuid = "164ad9f5-33d4-5a41-b5b0-0d4c8c0adc38"
+name = "A84 Dust Storm"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 1
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 1.0
+hpf = 1
+vcf_freq = 0.4094
+vcf_res = 0.6693
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.3465
+vcf_kbd = 0.7402
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.6929
+env_d = 0.7165
+env_s = 0.2205
+env_r = 0.6693
+chorus = 0

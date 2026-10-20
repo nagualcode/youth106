@@ -1,0 +1,29 @@
+uuid = "5110a6ab-abba-5009-b5cc-1844497e3b2b"
+name = "B64 Reedy Organ"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.2756
+lfo_delay = 0.1417
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.6952
+pwm_mode = 0
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.2598
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.4173
+vcf_lfo = 0.0
+vcf_kbd = 0.5118
+vca_mode = 1
+vca_level = 0.5433
+env_a = 0.0236
+env_d = 0.3465
+env_s = 0.8583
+env_r = 0.0
+chorus = 0

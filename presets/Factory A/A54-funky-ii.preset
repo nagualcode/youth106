@@ -1,0 +1,29 @@
+uuid = "e058f74e-2c29-50e7-bfd0-9593a1fc34b7"
+name = "A54 Funky II"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0315
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.4571
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.4488
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.0394
+vcf_res = 0.1811
+vcf_env_pol = 0
+vcf_env = 0.6378
+vcf_lfo = 0.0
+vcf_kbd = 0.3228
+vca_mode = 1
+vca_level = 0.7874
+env_a = 0.0
+env_d = 0.2362
+env_s = 0.3071
+env_r = 0.0157
+chorus = 1

@@ -1,0 +1,29 @@
+uuid = "176610c7-2cc3-57b6-9a1f-0861b6b7d92d"
+name = "B68 OW Bass"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.3937
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.4762
+pwm_mode = 1
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.3701
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.4961
+vcf_res = 0.6614
+vcf_env_pol = 1
+vcf_env = 0.5118
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 1
+vca_level = 0.5512
+env_a = 1.0
+env_d = 0.0
+env_s = 0.8425
+env_r = 0.0
+chorus = 0

@@ -1,0 +1,29 @@
+uuid = "f1c53100-f4d3-54ee-81a0-8a3cce585746"
+name = "A16 Brass & Strings"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.2756
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.5333
+pwm_mode = 0
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.1811
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.5984
+vcf_res = 0.1339
+vcf_env_pol = 0
+vcf_env = 0.0315
+vcf_lfo = 0.0
+vcf_kbd = 0.3228
+vca_mode = 0
+vca_level = 0.6142
+env_a = 0.3465
+env_d = 0.5197
+env_s = 0.4173
+env_r = 0.3465
+chorus = 1

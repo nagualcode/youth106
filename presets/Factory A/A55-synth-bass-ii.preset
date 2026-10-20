@@ -1,0 +1,29 @@
+uuid = "d2c0e13d-cddf-5977-a861-d258b61a2614"
+name = "A55 Synth Bass II"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.7087
+lfo_delay = 0.1654
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.3543
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.3386
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.3701
+vcf_lfo = 0.0
+vcf_kbd = 0.0
+vca_mode = 1
+vca_level = 0.6142
+env_a = 0.0
+env_d = 0.2913
+env_s = 0.0709
+env_r = 0.1732
+chorus = 0

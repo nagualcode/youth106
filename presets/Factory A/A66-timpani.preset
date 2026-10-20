@@ -1,0 +1,29 @@
+uuid = "475d7ce7-31a8-5f63-ac04-0a177a1578b1"
+name = "A66 Timpani"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.3333
+pwm_mode = 1
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.3701
+dco_noise = 1.0
+hpf = 1
+vcf_freq = 0.1969
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.4252
+vcf_lfo = 0.0
+vcf_kbd = 0.189
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0079
+env_d = 0.4409
+env_s = 0.2047
+env_r = 0.5591
+chorus = 0

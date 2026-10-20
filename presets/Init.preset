@@ -1,0 +1,29 @@
+uuid = "6f1d5c2a-1060-4a10-9b06-0000000000ff"
+name = "Init"
+comment = "Saw + pulse, filter open, chorus I"
+
+[params]
+lfo_rate = 0.24
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.5
+pwm_mode = 1
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 1.0
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 0.0
+vca_mode = 0
+vca_level = 0.5
+env_a = 0.0
+env_d = 0.25
+env_s = 0.9
+env_r = 0.25
+chorus = 1

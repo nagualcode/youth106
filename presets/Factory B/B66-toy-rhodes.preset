@@ -1,0 +1,29 @@
+uuid = "9aa22380-91af-58fd-95cd-63471229f97d"
+name = "B66 Toy Rhodes"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.2362
+lfo_delay = 0.3543
+dco_range = 2
+dco_lfo = 1.0
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 3
+vcf_freq = 0.4567
+vcf_res = 1.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 0.8425
+env_a = 0.0
+env_d = 0.7008
+env_s = 0.0
+env_r = 0.3071
+chorus = 0

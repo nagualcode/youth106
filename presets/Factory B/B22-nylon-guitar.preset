@@ -1,0 +1,29 @@
+uuid = "e9bebab2-b648-5aba-8fc1-e0896ebd6b54"
+name = "B22 Nylon Guitar"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.5669
+lfo_delay = 0.3543
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.2762
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 3
+vcf_freq = 0.4488
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.2047
+vcf_lfo = 0.0
+vcf_kbd = 0.1969
+vca_mode = 0
+vca_level = 0.9055
+env_a = 0.0
+env_d = 0.7008
+env_s = 0.0
+env_r = 0.252
+chorus = 0

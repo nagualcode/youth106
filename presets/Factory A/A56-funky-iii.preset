@@ -1,0 +1,29 @@
+uuid = "deed7de4-a1ca-515a-aafb-385ac4331f89"
+name = "A56 Funky III"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0315
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.0857
+pwm_mode = 1
+dco_pulse = true
+dco_saw = true
+dco_sub = 1.0
+dco_noise = 0.7953
+hpf = 0
+vcf_freq = 0.2992
+vcf_res = 0.4252
+vcf_env_pol = 0
+vcf_env = 0.3543
+vcf_lfo = 0.0
+vcf_kbd = 0.0787
+vca_mode = 1
+vca_level = 0.622
+env_a = 0.0
+env_d = 0.189
+env_s = 0.0
+env_r = 0.0157
+chorus = 0

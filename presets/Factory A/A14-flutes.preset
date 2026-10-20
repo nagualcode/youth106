@@ -1,0 +1,29 @@
+uuid = "18cac683-a7f3-5415-b625-ca2c82c024b2"
+name = "A14 Flutes"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4724
+lfo_delay = 0.3386
+dco_range = 1
+dco_lfo = 0.0082
+dco_pwm = 0.0
+pwm_mode = 1
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 3
+vcf_freq = 0.4331
+vcf_res = 0.252
+vcf_env_pol = 0
+vcf_env = 0.0787
+vcf_lfo = 0.0866
+vcf_kbd = 0.3228
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.1811
+env_d = 0.6378
+env_s = 0.0
+env_r = 0.1417
+chorus = 0

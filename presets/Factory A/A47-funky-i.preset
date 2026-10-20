@@ -1,0 +1,29 @@
+uuid = "bec791d4-d002-59ff-b28a-959e8d85d1ba"
+name = "A47 Funky I"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0315
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.6952
+pwm_mode = 1
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.5039
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.2441
+vcf_res = 0.1811
+vcf_env_pol = 0
+vcf_env = 0.4016
+vcf_lfo = 0.0
+vcf_kbd = 0.3228
+vca_mode = 1
+vca_level = 0.5591
+env_a = 0.0
+env_d = 0.2362
+env_s = 0.2835
+env_r = 0.0157
+chorus = 1

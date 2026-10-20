@@ -1,0 +1,29 @@
+uuid = "7e848451-50f1-5f46-8bd7-4d5440dfa3e8"
+name = "A34 Brass III"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4094
+lfo_delay = 0.1575
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.3333
+pwm_mode = 1
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.1732
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.5197
+vcf_res = 0.189
+vcf_env_pol = 0
+vcf_env = 0.0866
+vcf_lfo = 0.0
+vcf_kbd = 0.0945
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.4567
+env_d = 0.7874
+env_s = 0.7402
+env_r = 0.2913
+chorus = 1

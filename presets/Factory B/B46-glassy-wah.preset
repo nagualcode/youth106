@@ -1,0 +1,29 @@
+uuid = "e5d9ac57-2535-536a-b085-d501b6b07b8a"
+name = "B46 Glassy Wah"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.7402
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.2667
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.189
+vcf_res = 0.2677
+vcf_env_pol = 0
+vcf_env = 0.4803
+vcf_lfo = 0.0
+vcf_kbd = 0.5118
+vca_mode = 0
+vca_level = 0.8819
+env_a = 0.0472
+env_d = 0.1417
+env_s = 0.3937
+env_r = 0.2992
+chorus = 0

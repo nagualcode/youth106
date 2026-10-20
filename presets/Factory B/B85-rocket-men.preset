@@ -1,0 +1,29 @@
+uuid = "3997bf42-165f-595c-8053-51a4b9b81753"
+name = "B85 Rocket Men"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.8504
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.8661
+vcf_res = 1.0
+vcf_env_pol = 1
+vcf_env = 0.6299
+vcf_lfo = 0.4961
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 0.0
+env_a = 0.0
+env_d = 1.0
+env_s = 0.4016
+env_r = 0.7008
+chorus = 2

@@ -1,0 +1,29 @@
+uuid = "b44f8181-1d73-508b-8ccd-adcf2cc08aaa"
+name = "B41 Resonant Rise"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4094
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.2192
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.5197
+vcf_res = 0.8425
+vcf_env_pol = 1
+vcf_env = 0.2441
+vcf_lfo = 0.0
+vcf_kbd = 0.5748
+vca_mode = 1
+vca_level = 0.4882
+env_a = 0.0
+env_d = 0.4094
+env_s = 0.3071
+env_r = 0.0
+chorus = 2

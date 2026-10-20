@@ -1,0 +1,29 @@
+uuid = "56ceb1c0-d5b1-5bf4-bded-42f8809b78c2"
+name = "A24 Calliope"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6457
+lfo_delay = 0.315
+dco_range = 1
+dco_lfo = 0.1382
+dco_pwm = 0.0
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.378
+dco_noise = 0.0
+hpf = 2
+vcf_freq = 0.685
+vcf_res = 0.2126
+vcf_env_pol = 1
+vcf_env = 0.1339
+vcf_lfo = 0.0
+vcf_kbd = 0.4409
+vca_mode = 0
+vca_level = 0.7008
+env_a = 0.0551
+env_d = 1.0
+env_s = 1.0
+env_r = 0.0472
+chorus = 1

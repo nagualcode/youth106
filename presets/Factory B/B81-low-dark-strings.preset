@@ -1,0 +1,29 @@
+uuid = "88523d8d-8f25-5900-81d6-7a301daf3c81"
+name = "B81 Low Dark Strings"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.1654
+lfo_delay = 0.3543
+dco_range = 0
+dco_lfo = 0.0484
+dco_pwm = 0.7714
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.5591
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 0.811
+vca_mode = 0
+vca_level = 0.315
+env_a = 0.6535
+env_d = 0.1811
+env_s = 0.8583
+env_r = 0.3307
+chorus = 2

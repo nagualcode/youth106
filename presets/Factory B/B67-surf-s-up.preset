@@ -1,0 +1,29 @@
+uuid = "96ea8f5a-bb53-509f-b8d1-184984b81f59"
+name = "B67 Surf's Up"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0079
+lfo_delay = 0.0
+dco_range = 2
+dco_lfo = 0.0
+dco_pwm = 1.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 1.0
+hpf = 2
+vcf_freq = 0.6614
+vcf_res = 0.0866
+vcf_env_pol = 1
+vcf_env = 0.0
+vcf_lfo = 0.3858
+vcf_kbd = 0.4252
+vca_mode = 0
+vca_level = 0.5906
+env_a = 0.2598
+env_d = 0.7638
+env_s = 1.0
+env_r = 0.9528
+chorus = 0

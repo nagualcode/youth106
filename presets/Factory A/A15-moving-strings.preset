@@ -1,0 +1,29 @@
+uuid = "466c4ae9-e855-5427-b0b1-9b8732a5eaad"
+name = "A15 Moving Strings"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4961
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.3714
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.1102
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.6063
+vcf_res = 0.1575
+vcf_env_pol = 0
+vcf_env = 0.0315
+vcf_lfo = 0.0
+vcf_kbd = 0.874
+vca_mode = 0
+vca_level = 0.2677
+env_a = 0.1024
+env_d = 0.685
+env_s = 0.6929
+env_r = 0.2756
+chorus = 2

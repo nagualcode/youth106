@@ -1,0 +1,29 @@
+uuid = "b70044ff-7bff-5b4f-a7f1-26d187502939"
+name = "A88 Caverns"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.9714
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 1.0
+hpf = 2
+vcf_freq = 0.5354
+vcf_res = 0.9291
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 0.5433
+vca_mode = 0
+vca_level = 0.8425
+env_a = 0.0
+env_d = 0.1024
+env_s = 0.2992
+env_r = 0.3701
+chorus = 0

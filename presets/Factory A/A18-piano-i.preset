@@ -1,0 +1,29 @@
+uuid = "4efa8510-e1b8-576d-9ba6-5524df419041"
+name = "A18 Piano I"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.1575
+lfo_delay = 0.3858
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.7619
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.6772
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.5118
+vcf_res = 0.0945
+vcf_env_pol = 0
+vcf_env = 0.0787
+vcf_lfo = 0.0
+vcf_kbd = 0.2126
+vca_mode = 0
+vca_level = 0.811
+env_a = 0.0
+env_d = 0.5197
+env_s = 0.0
+env_r = 0.2362
+chorus = 0

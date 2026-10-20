@@ -1,0 +1,29 @@
+uuid = "63b5726f-120c-5339-8e61-f889a1c495f5"
+name = "A53 Lead III"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6772
+lfo_delay = 0.5591
+dco_range = 1
+dco_lfo = 0.3546
+dco_pwm = 0.9714
+pwm_mode = 1
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.4724
+vcf_res = 0.2441
+vcf_env_pol = 0
+vcf_env = 0.1417
+vcf_lfo = 0.0079
+vcf_kbd = 0.5984
+vca_mode = 1
+vca_level = 1.0
+env_a = 0.0
+env_d = 0.5197
+env_s = 0.378
+env_r = 0.0866
+chorus = 0

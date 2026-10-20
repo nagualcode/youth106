@@ -1,0 +1,29 @@
+uuid = "f371be79-efd7-5f12-a4e6-8fe00bb58562"
+name = "A86 Hand Claps"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4646
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 1
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 1.0
+hpf = 3
+vcf_freq = 0.1339
+vcf_res = 0.6929
+vcf_env_pol = 0
+vcf_env = 0.4252
+vcf_lfo = 0.0
+vcf_kbd = 0.4331
+vca_mode = 1
+vca_level = 1.0
+env_a = 0.0079
+env_d = 0.0866
+env_s = 0.0
+env_r = 0.063
+chorus = 0

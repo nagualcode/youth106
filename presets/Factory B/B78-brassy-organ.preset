@@ -1,0 +1,29 @@
+uuid = "f980d441-c7bb-5fdb-aa64-e981d188fe7f"
+name = "B78 Brassy Organ"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.126
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.6476
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.4409
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.063
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.685
+vcf_lfo = 0.0
+vcf_kbd = 0.4094
+vca_mode = 0
+vca_level = 0.1102
+env_a = 0.0
+env_d = 0.2835
+env_s = 0.8583
+env_r = 0.0
+chorus = 1

@@ -1,0 +1,29 @@
+uuid = "77730bcb-44ed-5215-add1-629dd6f649ad"
+name = "B11 Strings"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4488
+lfo_delay = 0.3543
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.5238
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.6693
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 0.8504
+vca_mode = 0
+vca_level = 0.4094
+env_a = 0.4646
+env_d = 0.252
+env_s = 0.6772
+env_r = 0.315
+chorus = 2

@@ -1,0 +1,29 @@
+uuid = "5ec0fb55-7fb3-5cd3-ae0e-acc721d3967c"
+name = "A43 Brass Ensemble"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4094
+lfo_delay = 0.3543
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.9714
+pwm_mode = 1
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.2441
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.3622
+vcf_res = 0.3465
+vcf_env_pol = 0
+vcf_env = 0.2283
+vcf_lfo = 0.0079
+vcf_kbd = 0.4646
+vca_mode = 0
+vca_level = 0.811
+env_a = 0.126
+env_d = 0.811
+env_s = 0.7638
+env_r = 0.2677
+chorus = 1

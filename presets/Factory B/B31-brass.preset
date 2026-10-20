@@ -1,0 +1,29 @@
+uuid = "87d13b58-e421-528a-9da4-9d735fe0e643"
+name = "B31 Brass"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4016
+lfo_delay = 1.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.6952
+pwm_mode = 0
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.0
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.7402
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 1
+vca_level = 0.5669
+env_a = 0.0236
+env_d = 0.3465
+env_s = 0.4016
+env_r = 0.0866
+chorus = 1

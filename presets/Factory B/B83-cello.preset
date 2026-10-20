@@ -1,0 +1,29 @@
+uuid = "125f636f-4c5f-569e-86b1-1d476c3e7531"
+name = "B83 Cello"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4488
+lfo_delay = 0.3543
+dco_range = 0
+dco_lfo = 0.3546
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.5906
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.0236
+vcf_lfo = 0.0079
+vcf_kbd = 0.3543
+vca_mode = 0
+vca_level = 0.8583
+env_a = 0.378
+env_d = 0.5118
+env_s = 0.7087
+env_r = 0.2677
+chorus = 0

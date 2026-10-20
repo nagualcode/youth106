@@ -1,0 +1,29 @@
+uuid = "836a24fd-2823-5713-a650-e31d0a575859"
+name = "B53 Bassoon"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6614
+lfo_delay = 0.2992
+dco_range = 0
+dco_lfo = 0.1038
+dco_pwm = 0.8571
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 3
+vcf_freq = 0.2756
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.3386
+vcf_lfo = 0.0709
+vcf_kbd = 0.7717
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0394
+env_d = 1.0
+env_s = 0.8346
+env_r = 0.0157
+chorus = 0

@@ -1,0 +1,29 @@
+uuid = "74979a2b-8ffc-5588-b06a-c46bce9f3aa1"
+name = "A13 Trumpet"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4094
+lfo_delay = 0.3543
+dco_range = 1
+dco_lfo = 0.0884
+dco_pwm = 0.9714
+pwm_mode = 1
+dco_pulse = false
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 2
+vcf_freq = 0.4331
+vcf_res = 0.2677
+vcf_env_pol = 0
+vcf_env = 0.189
+vcf_lfo = 0.0079
+vcf_kbd = 0.4646
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0394
+env_d = 0.5197
+env_s = 0.378
+env_r = 0.126
+chorus = 0

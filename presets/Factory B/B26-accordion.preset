@@ -1,0 +1,29 @@
+uuid = "a11cc272-e354-5ea4-afa0-afe6c33a5882"
+name = "B26 Accordion"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.6095
+pwm_mode = 1
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.6299
+dco_noise = 0.0
+hpf = 3
+vcf_freq = 0.6063
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.1102
+vcf_lfo = 0.0
+vcf_kbd = 0.5827
+vca_mode = 0
+vca_level = 0.5197
+env_a = 0.063
+env_d = 0.0866
+env_s = 0.8661
+env_r = 0.0709
+chorus = 1

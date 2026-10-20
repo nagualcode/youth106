@@ -1,0 +1,29 @@
+uuid = "fa9d26b6-e2f5-5fd7-b4e9-97e01d528dd9"
+name = "B76 Rolling Wah"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.2835
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 1.0
+pwm_mode = 0
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.4724
+vcf_res = 0.0709
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 1.0
+vcf_kbd = 0.0
+vca_mode = 0
+vca_level = 0.6063
+env_a = 0.2677
+env_d = 0.4331
+env_s = 1.0
+env_r = 0.8268
+chorus = 0

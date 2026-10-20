@@ -1,0 +1,29 @@
+uuid = "08dfe4a6-022b-59dc-8475-f09c6d964c95"
+name = "B28 FX Rise 2"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.8504
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.7402
+vcf_res = 1.0
+vcf_env_pol = 1
+vcf_env = 0.6299
+vcf_lfo = 0.1811
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 0.0
+env_a = 0.0
+env_d = 1.0
+env_s = 0.4016
+env_r = 0.5591
+chorus = 2

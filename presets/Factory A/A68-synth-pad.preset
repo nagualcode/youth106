@@ -1,0 +1,29 @@
+uuid = "fbdc5112-ef1f-5b9d-9ffa-1dd5d9986631"
+name = "A68 Synth Pad"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.4409
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0484
+dco_pwm = 0.4095
+pwm_mode = 0
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.2913
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.2913
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.6614
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 0.4016
+env_a = 0.0
+env_d = 0.6693
+env_s = 0.5906
+env_r = 0.4882
+chorus = 2

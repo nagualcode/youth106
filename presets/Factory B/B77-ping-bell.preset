@@ -1,0 +1,29 @@
+uuid = "f0003199-6b2d-5b28-be95-4a6f56a8b3a7"
+name = "B77 Ping Bell"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0866
+dco_range = 2
+dco_lfo = 0.0
+dco_pwm = 0.9905
+pwm_mode = 0
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.5984
+vcf_res = 1.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 0.6535
+env_a = 0.0
+env_d = 0.1811
+env_s = 0.1811
+env_r = 0.4488
+chorus = 1

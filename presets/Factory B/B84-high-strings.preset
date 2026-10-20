@@ -1,0 +1,29 @@
+uuid = "904234c4-434e-523d-b85f-1e4b3de769a0"
+name = "B84 High Strings"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6299
+lfo_delay = 0.0
+dco_range = 2
+dco_lfo = 0.1204
+dco_pwm = 0.6667
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.7244
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 0.5591
+vca_mode = 0
+vca_level = 0.378
+env_a = 0.2126
+env_d = 0.4488
+env_s = 0.4488
+env_r = 0.3228
+chorus = 2

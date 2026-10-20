@@ -1,0 +1,29 @@
+uuid = "108301d5-cbf5-50be-b053-483567795703"
+name = "A67 Shaker"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.1654
+lfo_delay = 0.5591
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.5524
+pwm_mode = 1
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 1.0
+hpf = 3
+vcf_freq = 0.7008
+vcf_res = 0.3543
+vcf_env_pol = 0
+vcf_env = 0.0079
+vcf_lfo = 0.1339
+vcf_kbd = 0.6299
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0787
+env_d = 0.0709
+env_s = 0.0
+env_r = 0.0
+chorus = 0

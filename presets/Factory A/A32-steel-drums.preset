@@ -1,0 +1,29 @@
+uuid = "72b6457b-1769-5d83-8472-2776e03935d4"
+name = "A32 Steel Drums"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.2598
+lfo_delay = 0.4173
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.3048
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.2598
+dco_noise = 0.0709
+hpf = 0
+vcf_freq = 0.5591
+vcf_res = 0.3622
+vcf_env_pol = 1
+vcf_env = 0.2047
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.0
+env_d = 0.2047
+env_s = 0.0
+env_r = 0.2913
+chorus = 1

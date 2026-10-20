@@ -1,0 +1,29 @@
+uuid = "440807f8-78b1-51da-97aa-8fdf202350a2"
+name = "B25 Organ Bell"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.6142
+lfo_delay = 0.0
+dco_range = 1
+dco_lfo = 0.0607
+dco_pwm = 0.6476
+pwm_mode = 1
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.6693
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.4803
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.0
+vcf_lfo = 0.0
+vcf_kbd = 1.0
+vca_mode = 0
+vca_level = 0.4882
+env_a = 0.0
+env_d = 0.0
+env_s = 1.0
+env_r = 0.2047
+chorus = 1

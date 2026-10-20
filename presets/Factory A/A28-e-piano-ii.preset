@@ -1,0 +1,29 @@
+uuid = "deb299df-5423-50f8-9250-0fa98fd43bb1"
+name = "A28 E Piano II"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.6762
+pwm_mode = 1
+dco_pulse = true
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 1
+vcf_freq = 0.3937
+vcf_res = 0.5433
+vcf_env_pol = 0
+vcf_env = 0.0551
+vcf_lfo = 0.0
+vcf_kbd = 0.6299
+vca_mode = 0
+vca_level = 0.8031
+env_a = 0.0
+env_d = 0.5354
+env_s = 0.0
+env_r = 0.1732
+chorus = 1

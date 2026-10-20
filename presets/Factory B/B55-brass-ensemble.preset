@@ -1,0 +1,29 @@
+uuid = "b2ae1924-6e44-50d3-8d9d-1f64ca4e70a5"
+name = "B55 Brass Ensemble"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.1969
+lfo_delay = 0.7402
+dco_range = 1
+dco_lfo = 0.0
+dco_pwm = 0.6952
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.3701
+vcf_res = 0.2677
+vcf_env_pol = 0
+vcf_env = 0.2756
+vcf_lfo = 0.0
+vcf_kbd = 0.5118
+vca_mode = 0
+vca_level = 0.3071
+env_a = 0.0472
+env_d = 0.5354
+env_s = 0.5276
+env_r = 0.2992
+chorus = 1

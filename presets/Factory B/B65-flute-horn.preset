@@ -1,0 +1,29 @@
+uuid = "03049398-da95-5164-81da-e006907c1ba2"
+name = "B65 Flute / Horn"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.2677
+lfo_delay = 0.0
+dco_range = 0
+dco_lfo = 0.0
+dco_pwm = 0.5619
+pwm_mode = 0
+dco_pulse = true
+dco_saw = true
+dco_sub = 0.0
+dco_noise = 0.0
+hpf = 0
+vcf_freq = 0.1969
+vcf_res = 0.0
+vcf_env_pol = 0
+vcf_env = 0.3307
+vcf_lfo = 0.0
+vcf_kbd = 0.5118
+vca_mode = 0
+vca_level = 0.1732
+env_a = 0.1654
+env_d = 0.5748
+env_s = 0.5591
+env_r = 0.378
+chorus = 2

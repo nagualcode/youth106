@@ -1,0 +1,29 @@
+uuid = "85fda628-0255-5943-bc0e-b1dd406ce783"
+name = "B58 Blizzard"
+author = "Roland (Juno-106 factory)"
+
+[params]
+lfo_rate = 0.0079
+lfo_delay = 0.0
+dco_range = 2
+dco_lfo = 0.0
+dco_pwm = 1.0
+pwm_mode = 0
+dco_pulse = false
+dco_saw = false
+dco_sub = 0.0
+dco_noise = 1.0
+hpf = 3
+vcf_freq = 0.4409
+vcf_res = 0.7008
+vcf_env_pol = 0
+vcf_env = 0.0551
+vcf_lfo = 0.2992
+vcf_kbd = 0.9528
+vca_mode = 0
+vca_level = 1.0
+env_a = 0.6142
+env_d = 0.7717
+env_s = 0.685
+env_r = 0.6142
+chorus = 0
