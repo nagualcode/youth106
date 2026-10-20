@@ -49,6 +49,11 @@ moves, **double-click** to reset, mouse wheel for small steps.
 | **ENV** | A, D, S, R | One envelope for both the VCF and VCA, with a live shape preview. |
 | **CHORUS** | I, II | The 106's stereo BBD chorus: I is gentle, II is faster. Pressing both gives the Juno-60's I+II mode, which the 106 doesn't have. |
 
+The chorus hiss slowly swaps between left and right. That is the hardware:
+each MN3009 leaks more noise when its clock is slow (long delay), and the two
+BBDs are swept in antiphase, so the noise peaks in one channel, then the
+other, at the chorus rate. Turn **Analog Noise** down in Settings to remove it.
+
 ### Bottom row — performance
 
 | Section | Controls | What it does |
@@ -110,7 +115,7 @@ Source map: `src/dsp/` — `voice.rs` (voice + DAC timing), `osc.rs` (DCO),
    filters. Only the Juno-106 path was ported. Its own keyboard and MIDI
    handling were left out in favour of standard DAW MIDI.
 2. **Checking against the service manual.** The Roland *Juno-106 Service
-   Notes* (1984) were read section by section: specifications, circuit
+   Notes* (1984, `juno106_service_manual.pdf`) were read section by section: specifications, circuit
    descriptions, the module and jack board schematics and the adjustment
    procedure. The firmware scales match the official specs (VCF env ±14 oct,
    LFO and bend ±3.5 oct, key follow +3/−2 oct, cutoff 5 Hz–50 kHz,

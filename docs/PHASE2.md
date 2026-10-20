@@ -124,7 +124,7 @@ Render these with `truce_test` and check ratios (absolute volts don't apply):
 
 ## Sources
 
-- Roland JUNO-106 Service Notes, 1st ed. (local PDF): p.1 specs, p.8–9 circuit
+- Roland JUNO-106 Service Notes, 1st ed. (`juno106_service_manual.pdf` in the repo root): p.1 specs, p.8–9 circuit
   description, p.15 jack board, p.18–19 adjustment.
 - Electric Druid, "Roland Juno DCOs": https://electricdruid.net/roland-juno-dcos/
 - Roland, "Icon Series: JUNO-106" (assign modes, unison):
