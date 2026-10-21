@@ -41,7 +41,7 @@ moves, **double-click** to reset, mouse wheel for small steps.
 
 | Section | Controls | What it does |
 |---|---|---|
-| **LFO** | Rate, Delay, Auto/Man, Sync + division | Global triangle LFO. Delay fades it in after a key press (Auto: only when all keys were up; Man: on every key or mod-wheel move). Sync locks it to the DAW tempo. |
+| **LFO** | Rate, Delay, Auto/Man, Sync + division | Global triangle LFO. Delay fades it in after a key press (Auto: only when all keys were up; Man: on every key or mod-wheel move). Sync locks it to the DAW tempo. On its own it makes no sound: raise DCO LFO (vibrato), VCF LFO (filter wobble) or set PWM to LFO. The chorus has its own fixed LFO. |
 | **DCO** | LFO, PWM, Sub, Noise, Range 16'/8'/4', PWM source, Pulse, Saw | The oscillator. LFO = vibrato depth. PWM = pulse width (manual, or swept by the LFO). Sub = square one octave down. Noise = white noise. Pulse and Saw switch the two main waveforms. |
 | **HPF** | 4-position switch | High-pass: bass boost, flat, 236 Hz, 754 Hz. |
 | **VCF** | Freq, Res, Env (+/− polarity), LFO, Kybd | 24 dB/oct resonant low-pass; self-oscillates at full Res. Env/LFO set how much the envelope and LFO move the cutoff; Kybd makes it follow the keyboard. |
@@ -49,10 +49,11 @@ moves, **double-click** to reset, mouse wheel for small steps.
 | **ENV** | A, D, S, R | One envelope for both the VCF and VCA, with a live shape preview. |
 | **CHORUS** | I, II | The 106's stereo BBD chorus: I is gentle, II is faster. Pressing both gives the Juno-60's I+II mode, which the 106 doesn't have. |
 
-The chorus hiss slowly swaps between left and right. That is the hardware:
-each MN3009 leaks more noise when its clock is slow (long delay), and the two
-BBDs are swept in antiphase, so the noise peaks in one channel, then the
-other, at the chorus rate. Turn **Analog Noise** down in Settings to remove it.
+On a real 106 the chorus adds a hiss that slowly swaps between left and
+right: each MN3009 leaks more noise when its clock is slow (long delay), and
+the two BBDs are swept in antiphase. It is off by default here; turn up
+**Chorus Hiss** in Settings to get it back. The chorus modulation, filtering
+and BBD saturation are the same either way.
 
 ### Bottom row — performance
 
@@ -67,7 +68,8 @@ other, at the chorus rate. Turn **Analog Noise** down in Settings to remove it.
 
 Voices (6/8/10), Oversampling (1×/2×/4×, default 2×), Velocity (off on the
 real 106), Mono Retrigger, Unison Drift (adds detune in Mono; 0 = hardware),
-Analog Noise (the noise floor and chorus hiss of the original; 0 removes it),
+Analog Noise (the noise floor, mains hum and chorus clicks of the original;
+0 removes it), Chorus Hiss (the BBD hiss, 0 by default, 10 = hardware),
 and **HW Res** — hardware resolution: 7-bit panel sliders (the filter
 cutoff moves in ~1.3-semitone steps), portamento and bend updated every
 4.2 ms, and an 8-bit bender, like the real firmware. Leave it off for
@@ -150,7 +152,7 @@ Source map: `src/dsp/` — `voice.rs` (voice + DAC timing), `osc.rs` (DCO),
 cargo install cargo-truce
 cargo truce install        # build + install VST3/AU/CLAP
 cargo truce run            # standalone
-cargo test --release       # 25 DSP and plugin tests
+cargo test --release       # 26 DSP and plugin tests
 cargo truce validate       # auval, pluginval, clap-validator
 ```
 

@@ -121,6 +121,7 @@ Render these with `truce_test` and check ratios (absolute volts don't apply):
 | 5 | Saw height = DCO CV / f through a per-voice S/H (τ ≈ 1 ms, estimated), pulse width follows the ramp height | done |
 | 6 | Optional VCA thump, LFO/chorus triangle asymmetry | open |
 | 7 | A/B harness with the manual's calibration targets, then recordings | open |
+| 8 | "Chorus Hiss" setting: BBD broadband + leakage hiss (pans with the chorus LFO) separable, default off | done |
 
 ## Sources
 

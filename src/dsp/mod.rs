@@ -94,6 +94,7 @@ pub enum Param {
     MonoRetrig,
     NoiseFloor,
     HwRes,
+    ChorusHiss,
 }
 
 /// Host transport as seen by one sample.
@@ -430,6 +431,7 @@ impl Engine {
                 self.noise_floor_mul = v;
                 self.chorus.noise_mul = v;
             }
+            Param::ChorusHiss => self.chorus.hiss_mul = v.clamp(0.0, 1.0),
         }
     }
 

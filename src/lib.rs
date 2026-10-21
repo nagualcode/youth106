@@ -345,6 +345,12 @@ pub struct Youth106Params {
     /// D7811G firmware. Off keeps DAW automation perfectly smooth.
     #[param(id = 97, name = "Hardware Resolution", short_name = "HW Res", group = "Settings")]
     pub hw_res: BoolParam,
+    /// MN3009 hiss in the chorus wet path (broadband + clock-dependent
+    /// leakage, which pans with the chorus LFO). Off by default; the
+    /// chorus modulation, filtering and saturation are unaffected.
+    #[param(id = 98, name = "Chorus Hiss", short_name = "Hiss", group = "Settings",
+            range = "linear(0, 1)", default = 0.0, format = "fmt_ten")]
+    pub chorus_hiss: FloatParam,
 
     // --- Hidden MIDI proxies (VST3 IMidiMapping; CLAP/AU get raw MIDI) ---
     #[param(id = 120, name = "Pitch Bend", range = "linear(-1, 1)", default = 0.0,
@@ -424,7 +430,7 @@ impl Youth106Params {
 
 use Youth106ParamsParamId as P;
 
-const NUM_ENGINE_PARAMS: usize = 49;
+const NUM_ENGINE_PARAMS: usize = 50;
 
 /// Engine parameter order for [`engine_values`].
 const ENGINE_PARAMS: [Param; NUM_ENGINE_PARAMS] = [
@@ -478,6 +484,7 @@ const ENGINE_PARAMS: [Param; NUM_ENGINE_PARAMS] = [
     Param::MonoRetrig,
     Param::NoiseFloor,
     Param::HwRes,
+    Param::ChorusHiss,
 ];
 
 fn b(x: &BoolParam) -> f32 {
@@ -535,6 +542,7 @@ fn engine_values(p: &Youth106Params) -> [f32; NUM_ENGINE_PARAMS] {
         b(&p.mono_retrig),
         p.noise_floor.value() as f32,
         b(&p.hw_res),
+        p.chorus_hiss.value() as f32,
     ]
 }
 

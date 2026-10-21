@@ -287,6 +287,9 @@ pub struct Chorus {
     gain_mod_scale: f32,
     /// Analog noise multiplier (wet broadband, leakage, clicks, ripple).
     pub noise_mul: f32,
+    /// BBD hiss multiplier (wet broadband + leakage only), on top of
+    /// `noise_mul`. Clicks and ripple stay under `noise_mul`.
+    pub hiss_mul: f32,
 }
 
 impl Default for Chorus {
@@ -318,6 +321,7 @@ impl Default for Chorus {
             target_delay_depth: 0.0,
             gain_mod_scale: 1.0,
             noise_mul: 1.0,
+            hiss_mul: 1.0,
         }
     }
 }
@@ -441,10 +445,11 @@ impl Chorus {
         let leak_amt1 = self.delay_depth * (LEAK_MIN_FRAC + (1.0 - LEAK_MIN_FRAC) * n1);
 
         let nm = self.noise_mul;
-        let wet_pink0 = self.wet_pink0.process() * levels::WET_BROADBAND * nm;
-        let wet_pink1 = self.wet_pink1.process() * levels::WET_BROADBAND * nm;
-        let leak0 = self.leak0.process();
-        let leak1 = self.leak1.process();
+        let hiss = self.hiss_mul;
+        let wet_pink0 = self.wet_pink0.process() * levels::WET_BROADBAND * nm * hiss;
+        let wet_pink1 = self.wet_pink1.process() * levels::WET_BROADBAND * nm * hiss;
+        let leak0 = self.leak0.process() * hiss;
+        let leak1 = self.leak1.process() * hiss;
 
         let gms = self.gain_mod_scale;
         let c0 = self.click0.process(-lfo) * CLICK_GAIN * gms;
