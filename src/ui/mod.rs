@@ -403,7 +403,7 @@ fn output_section(ui: &mut egui::Ui, s: &Ctx, r: Rect) {
 }
 
 fn settings_strip(ui: &mut egui::Ui, s: &Ctx, bottom: Rect) {
-    let secs = strip_sections(bottom, &[8, 3]);
+    let secs = strip_sections(bottom, &[7, 3]);
     let c = section(ui, secs[0], "SETTINGS");
     let label = |ui: &egui::Ui, cell: Rect, t: &str| {
         ui.painter().text(pos2(cell.center().x, cell.top()), Align2::CENTER_TOP, t, small(10.0), DIM);
@@ -427,12 +427,11 @@ fn settings_strip(ui: &mut egui::Ui, s: &Ctx, bottom: Rect) {
     let c6 = knob_cell(c, 6);
     label(ui, c6, "HW RES");
     toggle(ui, s, below(c6), P::HwRes, "7-BIT");
-    knob(ui, s, knob_cell(c, 7), P::ChorusHiss, "HISS");
 
     let c = section(ui, secs[1], "ABOUT");
     let lines = [
         "Juno-106 emulation · DSP ported from Ultramaster KR-106 (GPL-3.0)",
-        "Drift: unison detune (Mono only).  HW Res: 7-bit sliders.  Hiss: chorus BBD noise.",
+        "Drift: unison detune (Mono only).  HW Res: 7-bit sliders, 4.2 ms pitch frames.",
         "Double-click resets a control · Shift-drag for fine adjustment.",
     ];
     for (k, l) in lines.iter().enumerate() {

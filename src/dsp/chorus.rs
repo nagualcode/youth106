@@ -5,12 +5,14 @@
 //! inverting summer of dry + one wet tap. The BBD is a Hermite-interpolated
 //! fractional delay (the Juno's ~40 kHz clock puts BBD aliasing above audio
 //! Nyquist), with the matched pre/post filters, input saturation, clock-
-//! rate-dependent charge-transfer loss, leakage noise, clock-reset clicks
-//! and the per-channel ~30 Hz output-stage ring measured on hardware.
+//! rate-dependent charge-transfer loss, clock-reset clicks and the
+//! per-channel ~30 Hz output-stage ring measured on hardware. The BBD hiss
+//! of the reference (broadband + clock-dependent leakage, which pans with
+//! the chorus LFO) is deliberately left out.
 
 use std::f32::consts::PI;
 
-use super::noise::{FloorNoise, RailRipple, bipolar, levels};
+use super::noise::{RailRipple, levels};
 
 /// Ring buffer length: >= 20 ms at 192 kHz plus Hermite margin.
 const BUF_LEN: usize = 4096;
@@ -44,8 +46,6 @@ const WET_GAIN: f32 = 1.257;
 
 const CTE_LOSS_COEFF: f32 = 4468.0;
 const INV_CLOCK_CENTER: f32 = 1.0 / 40_000.0;
-const LEAKAGE_GAIN: f32 = 8.8e-3;
-const LEAK_MIN_FRAC: f32 = 0.0126;
 /// Per-BBD clock / gain tolerance (two MN3009s are never identical).
 const CLOCK_TRIM: f32 = 0.015;
 const GAIN_TRIM: f32 = 0.04;
@@ -196,36 +196,6 @@ impl BbdClick {
     }
 }
 
-/// Band-passed (800 Hz HPF + 4 kHz LPF) BBD leakage noise.
-#[derive(Clone)]
-struct LeakNoise {
-    seed: u32,
-    hp_state: f32,
-    hp_coeff: f32,
-    lp_state: f32,
-    lp_coeff: f32,
-}
-
-impl LeakNoise {
-    fn new(seed: u32) -> Self {
-        Self { seed, hp_state: 0.0, hp_coeff: 0.0, lp_state: 0.0, lp_coeff: 0.0 }
-    }
-
-    fn init(&mut self, sample_rate: f32) {
-        self.hp_coeff = 1.0 - (-2.0 * PI * 800.0 / sample_rate).exp();
-        self.lp_coeff = 1.0 - (-2.0 * PI * 4000.0 / sample_rate).exp();
-    }
-
-    #[inline]
-    fn process(&mut self) -> f32 {
-        let white = bipolar(&mut self.seed);
-        self.hp_state += self.hp_coeff * (white - self.hp_state);
-        let hp = white - self.hp_state;
-        self.lp_state += self.lp_coeff * (hp - self.lp_state);
-        self.lp_state
-    }
-}
-
 /// ~30 Hz, Q 18 output-stage resonance excited by each click
 /// (Chamberlin SVF, lowpass out).
 #[derive(Clone, Default)]
@@ -269,12 +239,8 @@ pub struct Chorus {
     click1: BbdClick,
     slow_click0: BbdClick,
     slow_click1: BbdClick,
-    leak0: LeakNoise,
-    leak1: LeakNoise,
     ring0: ClickRing,
     ring1: ClickRing,
-    wet_pink0: FloorNoise,
-    wet_pink1: FloorNoise,
     wet_ripple: RailRipple,
     mode: u32,
     pending_mode: u32,
@@ -285,11 +251,8 @@ pub struct Chorus {
     delay_depth: f32,
     target_delay_depth: f32,
     gain_mod_scale: f32,
-    /// Analog noise multiplier (wet broadband, leakage, clicks, ripple).
+    /// Analog noise multiplier (clicks, ring, ripple).
     pub noise_mul: f32,
-    /// BBD hiss multiplier (wet broadband + leakage only), on top of
-    /// `noise_mul`. Clicks and ripple stay under `noise_mul`.
-    pub hiss_mul: f32,
 }
 
 impl Default for Chorus {
@@ -304,12 +267,8 @@ impl Default for Chorus {
             click1: BbdClick::default(),
             slow_click0: BbdClick::default(),
             slow_click1: BbdClick::default(),
-            leak0: LeakNoise::new(0xDEAD_BEEF),
-            leak1: LeakNoise::new(0x1BAD_B002),
             ring0: ClickRing::default(),
             ring1: ClickRing::default(),
-            wet_pink0: FloorNoise::new(0x1234_5678),
-            wet_pink1: FloorNoise::new(0x8765_4321),
             wet_ripple: RailRipple::default(),
             mode: 0,
             pending_mode: 0,
@@ -321,7 +280,6 @@ impl Default for Chorus {
             target_delay_depth: 0.0,
             gain_mod_scale: 1.0,
             noise_mul: 1.0,
-            hiss_mul: 1.0,
         }
     }
 }
@@ -334,13 +292,8 @@ impl Chorus {
         for c in [&mut self.click0, &mut self.click1, &mut self.slow_click0, &mut self.slow_click1] {
             c.init(sample_rate);
         }
-        self.leak0.init(sample_rate);
-        self.leak1.init(sample_rate);
         self.ring0.init(sample_rate);
         self.ring1.init(sample_rate);
-        for p in [&mut self.wet_pink0, &mut self.wet_pink1] {
-            p.set_high_shelf(levels::WET_SHELF_HZ, levels::WET_SHELF_DB, sample_rate);
-        }
         self.wet_ripple.init(60.0, levels::WET_RIPPLE, sample_rate);
         self.lfo_phase = 0.0;
         self.fade_inc = 1.0 / (FADE_MS * 0.001 * sample_rate);
@@ -437,28 +390,15 @@ impl Chorus {
         let clock0 = (BBD_STAGES / (2.0 * d0_ms * 0.001)).max(MIN_CLOCK_HZ);
         let clock1 = (BBD_STAGES / (2.0 * d1_ms * 0.001)).max(MIN_CLOCK_HZ);
 
-        // Leakage rises dB-linearly with LFO position (~38 dB span).
-        let inv_depth = if self.delay_depth > 1e-9 { 1.0 / self.delay_depth } else { 0.0 };
-        let n0 = ((d0_ms - CENTER_DELAY_MS) * inv_depth + 1.0) * 0.5;
-        let n1 = ((d1_ms - CENTER_DELAY_MS) * inv_depth + 1.0) * 0.5;
-        let leak_amt0 = self.delay_depth * (LEAK_MIN_FRAC + (1.0 - LEAK_MIN_FRAC) * n0);
-        let leak_amt1 = self.delay_depth * (LEAK_MIN_FRAC + (1.0 - LEAK_MIN_FRAC) * n1);
-
         let nm = self.noise_mul;
-        let hiss = self.hiss_mul;
-        let wet_pink0 = self.wet_pink0.process() * levels::WET_BROADBAND * nm * hiss;
-        let wet_pink1 = self.wet_pink1.process() * levels::WET_BROADBAND * nm * hiss;
-        let leak0 = self.leak0.process() * hiss;
-        let leak1 = self.leak1.process() * hiss;
-
         let gms = self.gain_mod_scale;
         let c0 = self.click0.process(-lfo) * CLICK_GAIN * gms;
         let c1 = self.click1.process(lfo) * CLICK_GAIN * gms;
         let s0 = self.slow_click0.process(lfo) * SLOW_CLICK_GAIN * gms;
         let s1 = self.slow_click1.process(-lfo) * SLOW_CLICK_GAIN * gms;
 
-        let inj0 = (wet_pink0 + leak0 * LEAKAGE_GAIN * leak_amt0 + c0 - s0) * nm;
-        let inj1 = (wet_pink1 + leak1 * LEAKAGE_GAIN * leak_amt1 + c1 - s1) * nm;
+        let inj0 = (c0 - s0) * nm;
+        let inj1 = (c1 - s1) * nm;
 
         let mut wet0 = self.line0.process(input, d0, inj0);
         let mut wet1 = self.line1.process(input, d1, inj1);

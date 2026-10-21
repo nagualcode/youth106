@@ -92,32 +92,19 @@ impl NoiseSource {
 pub mod levels {
     pub const DRY_BROADBAND: f32 = 1.5e-3;
     pub const DRY_RIPPLE: [f32; 3] = [1.8e-5, 8.9e-6, 6.3e-6];
-    pub const WET_BROADBAND: f32 = 1.8e-3;
-    pub const WET_SHELF_HZ: f32 = 3000.0;
-    pub const WET_SHELF_DB: f32 = 6.0;
     pub const WET_RIPPLE: [f32; 3] = [7.9e-5, 2.2e-5, 9.8e-6];
 }
 
-/// Broadband analog floor: pink (Paul Kellet) noise with an optional
-/// one-pole high shelf for the HF-tilted chorus path.
+/// Broadband analog floor: pink (Paul Kellet) noise.
 #[derive(Clone)]
 pub struct FloorNoise {
     seed: u32,
     pink: [f32; 7],
-    shelf_state: f32,
-    shelf_coeff: f32,
-    shelf_gain: f32,
 }
 
 impl FloorNoise {
     pub fn new(seed: u32) -> Self {
-        Self { seed, pink: [0.0; 7], shelf_state: 0.0, shelf_coeff: 0.0, shelf_gain: 0.0 }
-    }
-
-    pub fn set_high_shelf(&mut self, corner_hz: f32, boost_db: f32, sample_rate: f32) {
-        let fc = corner_hz.min(sample_rate * 0.45);
-        self.shelf_coeff = 1.0 - (-2.0 * PI * fc / sample_rate).exp();
-        self.shelf_gain = 10f32.powf(boost_db / 20.0) - 1.0;
+        Self { seed, pink: [0.0; 7] }
     }
 
     #[inline]
@@ -132,13 +119,7 @@ impl FloorNoise {
         p[5] = -0.7616 * p[5] - white * 0.016_898;
         let pink = p[0] + p[1] + p[2] + p[3] + p[4] + p[5] + p[6] + white * 0.5362;
         p[6] = white * 0.115_926;
-        let out = pink * 0.11;
-        if self.shelf_gain != 0.0 {
-            self.shelf_state += self.shelf_coeff * (out - self.shelf_state);
-            out + self.shelf_gain * (out - self.shelf_state)
-        } else {
-            out
-        }
+        pink * 0.11
     }
 }
 

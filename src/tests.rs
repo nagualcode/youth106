@@ -157,22 +157,16 @@ fn chorus_widens_stereo() {
 }
 
 #[test]
-fn chorus_hiss_is_optional() {
-    // Idle with chorus I on: above ~1 kHz the output is the BBD hiss.
-    let side = |hiss: f64| {
-        let r = driver!(Plugin)
-            .sample_rate(SR)
-            .set_param(P::Chorus, 1.0 / 3.0)
-            .set_param(P::ChorusHiss, hiss)
-            .duration(Duration::from_millis(2000))
-            .run();
-        // First difference ~ +6 dB/oct: weights the hiss band, not the
-        // mains ripple or the low-frequency turnaround clicks.
+fn chorus_adds_no_hiss() {
+    // Idle: above ~1 kHz the chorus adds almost nothing to the dry floor
+    // (the BBD hiss is not modeled).
+    let hf_rms = |chorus: f64| {
+        let r = driver!(Plugin).sample_rate(SR).set_param(P::Chorus, chorus).duration(Duration::from_millis(2000)).run();
         let hf: Vec<f32> = r.output[0].windows(2).map(|w| w[1] - w[0]).collect();
         rms(&hf[9600..])
     };
-    let (off, on) = (side(0.0), side(1.0));
-    assert!(on > off * 3.0, "hiss on {on} vs off {off}");
+    let (off, on) = (hf_rms(0.0), hf_rms(1.0 / 3.0));
+    assert!(on < 5e-5, "chorus hf noise {on} (off {off})");
 }
 
 #[test]
@@ -368,27 +362,3 @@ fn print_dco_cv_transient() {
     }
 }
 
-#[test]
-#[ignore]
-fn print_chorus_noise() {
-    let db = |x: f32| 20.0 * x.max(1e-12).log10();
-    for (name, chorus, hiss, floor) in [
-        ("chorus off      ", 0.0, 1.0, 1.0),
-        ("chorus I, hiss 1", 1.0 / 3.0, 1.0, 1.0),
-        ("chorus I, hiss 0", 1.0 / 3.0, 0.0, 1.0),
-        ("chorus I, floor0", 1.0 / 3.0, 1.0, 0.0),
-    ] {
-        let r = driver!(Plugin)
-            .sample_rate(SR)
-            .set_param(P::Chorus, chorus)
-            .set_param(P::ChorusHiss, hiss)
-            .set_param(P::NoiseFloor, floor)
-            .duration(Duration::from_millis(4000))
-            .run();
-        let w = 4800;
-        let l: Vec<f32> = r.output[0][9600..].chunks(w).map(rms).collect();
-        let rr: Vec<f32> = r.output[1][9600..].chunks(w).map(rms).collect();
-        let pan: Vec<String> = l.iter().zip(&rr).map(|(a, b)| format!("{:+.0}", db(*a) - db(*b))).collect();
-        println!("{name}: L {:.1} dBFS R {:.1} dBFS  L-R per 100ms: {}", db(rms(&r.output[0][9600..])), db(rms(&r.output[1][9600..])), pan.join(" "));
-    }
-}

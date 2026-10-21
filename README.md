@@ -49,11 +49,10 @@ moves, **double-click** to reset, mouse wheel for small steps.
 | **ENV** | A, D, S, R | One envelope for both the VCF and VCA, with a live shape preview. |
 | **CHORUS** | I, II | The 106's stereo BBD chorus: I is gentle, II is faster. Pressing both gives the Juno-60's I+II mode, which the 106 doesn't have. |
 
-On a real 106 the chorus adds a hiss that slowly swaps between left and
-right: each MN3009 leaks more noise when its clock is slow (long delay), and
-the two BBDs are swept in antiphase. It is off by default here; turn up
-**Chorus Hiss** in Settings to get it back. The chorus modulation, filtering
-and BBD saturation are the same either way.
+A real 106's chorus also adds a hiss that slowly swaps between left and
+right (each MN3009 leaks more noise when its clock is slow, and the two BBDs
+are swept in antiphase). Youth106 leaves that hiss out; the chorus
+modulation, filtering and BBD saturation are modeled as on the hardware.
 
 ### Bottom row — performance
 
@@ -69,7 +68,7 @@ and BBD saturation are the same either way.
 Voices (6/8/10), Oversampling (1×/2×/4×, default 2×), Velocity (off on the
 real 106), Mono Retrigger, Unison Drift (adds detune in Mono; 0 = hardware),
 Analog Noise (the noise floor, mains hum and chorus clicks of the original;
-0 removes it), Chorus Hiss (the BBD hiss, 0 by default, 10 = hardware),
+0 removes it),
 and **HW Res** — hardware resolution: 7-bit panel sliders (the filter
 cutoff moves in ~1.3-semitone steps), portamento and bend updated every
 4.2 ms, and an 8-bit bender, like the real firmware. Leave it off for
@@ -140,6 +139,7 @@ Source map: `src/dsp/` — `voice.rs` (voice + DAC timing), `osc.rs` (DCO),
      pulse width briefly move, as on the hardware.
    - **Hardware resolution mode:** the firmware's 7-bit sliders and 4.2 ms
      pitch frames, as an option.
+   - **No chorus hiss:** the BBD hiss is deliberately not modeled.
    - Output calibrated for DAW gain staging (a full chord fits under 0 dBFS
      at Master 0 dB), and factory PWM values scaled to the 106's 0–105 range.
 
