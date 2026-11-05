@@ -1,0 +1,29 @@
+uuid = "46adc616-3c04-5552-877d-045d1d5f4257"
+name = "Underwater Pad"
+author = "Jardim Sonoro"
+comment = "Porches. Recipe, Reverb Machine"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.8
+23 = 1
+24 = true
+25 = true
+26 = 0.0
+27 = 0.0
+30 = 3
+40 = 0.2
+41 = 0.0
+42 = 0
+43 = 0.4
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.05
+61 = 0.5
+62 = 0.5
+63 = 0.3
+70 = 0

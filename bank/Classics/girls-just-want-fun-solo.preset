@@ -1,0 +1,30 @@
+uuid = "28ff8696-d6d7-57a4-96e5-29fd23b145fd"
+name = "Girls Just Want Fun Solo"
+author = "Jardim Sonoro"
+comment = "Cyndi Lauper (1983). Reconstruction: steel-drum Juno-60 pad on the arpeggiator; raise BEND VCF for the filter moves"
+
+[params]
+1 = true
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = true
+25 = false
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 0.4
+41 = 0.4
+42 = 0
+43 = 0.4
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.4
+62 = 0.0
+63 = 0.3
+70 = 1

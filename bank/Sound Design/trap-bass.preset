@@ -1,0 +1,30 @@
+uuid = "389b23d8-a3ee-5bcc-813d-1a0359b2d5d6"
+name = "Trap Bass"
+author = "Jardim Sonoro"
+comment = "Roland, Creating JUNO Basses: 16' square, Mono, low VCF; add distortion after it"
+
+[params]
+10 = 0.3
+20 = 0
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = true
+25 = false
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 0.3
+41 = 0.0
+42 = 0
+43 = 0.1373
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.6588
+62 = 0.0
+63 = 0.4706
+70 = 0
+83 = 0

@@ -1,0 +1,30 @@
+uuid = "6a27cdf0-69d0-539a-8916-ab021d31ef20"
+name = "Original Reese"
+author = "Jardim Sonoro"
+comment = "Roland, Creating JUNO Basses: full pulse, LFO PWM above 200/255, Freq ~130/255, chorus on; sync the LFO"
+
+[params]
+10 = 0.3
+11 = 0.0
+20 = 1
+21 = 0.0
+22 = 0.8
+23 = 0
+24 = true
+25 = false
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 0.5098
+41 = 0.0
+42 = 0
+43 = 0.0
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.0
+62 = 1.0
+63 = 0.1
+70 = 1

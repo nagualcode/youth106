@@ -1,0 +1,30 @@
+uuid = "dca6c629-daba-52e3-a0a3-dee7bf2d11b2"
+name = "A55 Popcorn"
+author = "Roland (Juno-60 factory)"
+comment = "Inspired by Hot Butter's Popcorn"
+
+[params]
+10 = 0.0215
+11 = 0.0
+20 = 2
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = false
+25 = false
+26 = 1.0
+27 = 0.0
+30 = 1
+40 = 0.3262
+41 = 0.1575
+42 = 0
+43 = 0.3832
+44 = 0.0
+45 = 1.0
+50 = 0
+51 = 0.874
+60 = 0.0
+61 = 0.4688
+62 = 0.1181
+63 = 0.0049
+70 = 0

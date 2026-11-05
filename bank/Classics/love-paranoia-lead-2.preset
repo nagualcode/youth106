@@ -1,0 +1,29 @@
+uuid = "0078c33e-f5f4-5b66-8623-31bfdfac3e08"
+name = "Love Paranoia Lead 2"
+author = "Jardim Sonoro"
+comment = "Tame Impala, Currents. Recipe, Reverb Machine"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = false
+25 = true
+26 = 0.0
+27 = 0.0
+30 = 3
+40 = 0.65
+41 = 0.45
+42 = 0
+43 = 0.0
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.5
+62 = 1.0
+63 = 0.3
+70 = 2

@@ -1,0 +1,30 @@
+uuid = "8bb819f3-3cbf-5f96-8b6a-e26b1b68e4f3"
+name = "A23 Combo Organ"
+author = "Roland (Juno-106 factory)"
+comment = "House of the Rising Sun territory (Synthmania)"
+
+[params]
+10 = 0.5906
+11 = 0.1654
+20 = 2
+21 = 0.1038
+22 = 0.5429
+23 = 1
+24 = true
+25 = false
+26 = 0.4803
+27 = 0.0
+30 = 2
+40 = 0.4961
+41 = 0.5512
+42 = 0
+43 = 0.0315
+44 = 0.0
+45 = 0.8583
+50 = 1
+51 = 0.7559
+60 = 0.0
+61 = 0.378
+62 = 0.3386
+63 = 0.3622
+70 = 0

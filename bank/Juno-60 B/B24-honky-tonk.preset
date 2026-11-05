@@ -1,0 +1,30 @@
+uuid = "11c3484b-653e-56a3-b6b2-d09bfefb16dc"
+name = "B24 Honky Tonk"
+author = "Roland (Juno-60 factory)"
+comment = "Think Bette Davis Eyes (Kim Carnes) (Synthmania)"
+
+[params]
+10 = 0.0811
+11 = 0.0079
+20 = 1
+21 = 0.0
+22 = 0.4409
+23 = 0
+24 = true
+25 = false
+26 = 0.9893
+27 = 0.0
+30 = 1
+40 = 0.1621
+41 = 0.0
+42 = 0
+43 = 0.7535
+44 = 0.0
+45 = 0.4409
+50 = 0
+51 = 0.5906
+60 = 0.0
+61 = 0.8701
+62 = 0.315
+63 = 0.8545
+70 = 2

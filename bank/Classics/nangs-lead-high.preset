@@ -1,0 +1,29 @@
+uuid = "089d4486-3183-5d99-8d0b-880e01ee8e59"
+name = "Nangs Lead High"
+author = "Jardim Sonoro"
+comment = "Tame Impala, Currents. Recipe, Reverb Machine: an octave up, airy, high HPF; levels estimated"
+
+[params]
+10 = 0.5
+20 = 2
+21 = 0.0
+22 = 0.5
+23 = 0
+24 = true
+25 = true
+26 = 0.0
+27 = 0.0
+30 = 3
+40 = 0.8
+41 = 0.0
+42 = 0
+43 = 0.0
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.5
+62 = 1.0
+63 = 0.3
+70 = 0

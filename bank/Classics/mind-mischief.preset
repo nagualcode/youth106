@@ -1,0 +1,29 @@
+uuid = "cdd7f594-ed36-5246-97c1-6e4523de9707"
+name = "Mind Mischief"
+author = "Jardim Sonoro"
+comment = "Tame Impala, Lonerism (2012). Recipe, Reverb Machine; the record adds a JC-120 and a Small Stone phaser"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.5
+23 = 1
+24 = true
+25 = false
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 1.0
+41 = 0.0
+42 = 0
+43 = 0.0
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.5
+62 = 1.0
+63 = 0.3
+70 = 0

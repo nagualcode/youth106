@@ -1,0 +1,29 @@
+uuid = "85c4da1b-b4ad-52ab-92e0-e29d3991aebd"
+name = "Structure No.3 Horn"
+author = "Jardim Sonoro"
+comment = "BADBADNOTGOOD, IV (2016). Recipe, Reverb Machine; ENV amount estimated"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = false
+25 = true
+26 = 0.2
+27 = 0.0
+30 = 1
+40 = 0.0
+41 = 0.0
+42 = 0
+43 = 0.5
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.3
+61 = 0.5
+62 = 0.0
+63 = 0.5
+70 = 1

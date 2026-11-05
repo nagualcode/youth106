@@ -1,0 +1,29 @@
+uuid = "fcf4546b-fd4d-5c6a-a924-d923d5b2e391"
+name = "One More Love Song"
+author = "Jardim Sonoro"
+comment = "Mac DeMarco, This Old Dog (2017). Recipe, Reverb Machine; original synth unknown"
+
+[params]
+10 = 0.0879
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = true
+25 = true
+26 = 1.0
+27 = 0.0
+30 = 1
+40 = 0.3
+41 = 0.2
+42 = 0
+43 = 0.25
+44 = 0.5
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.5
+62 = 0.8
+63 = 0.3
+70 = 0

@@ -1,0 +1,31 @@
+uuid = "e35195b2-910f-5841-be1b-722979f17e31"
+name = "Nangs Wobble"
+author = "Jardim Sonoro"
+comment = "Tame Impala, Currents (2015). Juno-106 recipe, Reverb Machine; LFO synced 1/16"
+
+[params]
+10 = 0.3
+13 = true
+14 = 9
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = false
+25 = true
+26 = 0.6
+27 = 0.0
+30 = 1
+40 = 0.5
+41 = 0.1
+42 = 0
+43 = 0.0
+44 = 0.2
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.5
+62 = 0.8
+63 = 0.3
+70 = 2

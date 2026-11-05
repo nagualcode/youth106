@@ -1,0 +1,30 @@
+uuid = "0c887b2e-4e47-5dbb-97b6-e3eee13959e3"
+name = "A61 Synth Organ"
+author = "Roland (Juno-60 factory)"
+comment = "Rob Hyman (Time After Time): \"Number 61 on the JUNO\" - see Classics"
+
+[params]
+10 = 0.0547
+11 = 0.8346
+20 = 1
+21 = 0.0
+22 = 0.6772
+23 = 1
+24 = true
+25 = false
+26 = 0.6562
+27 = 0.0
+30 = 1
+40 = 0.332
+41 = 0.0
+42 = 0
+43 = 0.3648
+44 = 0.0664
+45 = 0.6614
+50 = 1
+51 = 0.4646
+60 = 0.0
+61 = 0.2881
+62 = 0.4646
+63 = 0.335
+70 = 2

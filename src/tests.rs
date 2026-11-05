@@ -362,3 +362,101 @@ fn print_dco_cv_transient() {
     }
 }
 
+/// Every compiled-in preset is well-formed and plays at a sane level.
+#[test]
+fn bank_presets_play() {
+    use truce_params::Params;
+    let infos = Youth106Params::default().param_infos();
+    assert!(bank::BANK.len() >= 299, "{} presets", bank::BANK.len());
+    for preset in bank::BANK {
+        for (id, plain) in preset.params {
+            let info = infos.iter().find(|i| i.id == *id).unwrap_or_else(|| panic!("{}: id {id}", preset.name));
+            let (lo, hi) = (info.range.denormalize(0.0), info.range.denormalize(1.0));
+            assert!(*plain >= lo - 1e-9 && *plain <= hi + 1e-9, "{}: {id} = {plain} outside {lo}..{hi}", preset.name);
+        }
+        let mut d = driver!(Plugin).sample_rate(SR).duration(Duration::from_millis(2500));
+        for (id, n) in bank::panel_targets(preset.params, &infos) {
+            d = d.set_param(id, n);
+        }
+        let r = d
+            .script(|s| {
+                for n in [48, 55, 60, 64] {
+                    s.note_on(n, 0.85);
+                }
+                s.wait_ms(2000);
+            })
+            .run();
+        assertions::assert_no_nans(&r);
+        let peak = r.output[0].iter().chain(&r.output[1]).fold(0.0f32, |m, x| m.max(x.abs()));
+        println!("{:<14} {:<32} peak {:6.1} dB", preset.category, preset.name, 20.0 * peak.max(1e-9).log10());
+        // Factory patches keep their stored VCA LEVEL even when a chord
+        // runs a little over 0 dBFS; the patches we author must fit.
+        let factory = preset.category.starts_with("Juno-");
+        let ceiling = if factory { 2.1 } else { 1.0 };
+        assert!(peak > 0.03 && peak < ceiling, "{}/{}: peak {peak}", preset.category, preset.name);
+    }
+}
+
+#[test]
+fn bank_has_every_factory_patch() {
+    for (category, count) in [("Juno-106 A", 64), ("Juno-106 B", 64), ("Juno-60 A", 56), ("Juno-60 B", 55)] {
+        assert_eq!(bank::BANK.iter().filter(|p| p.category == category).count(), count, "{category}");
+    }
+}
+
+#[test]
+fn bank_names_are_unique_within_a_category() {
+    let mut seen = std::collections::HashSet::new();
+    for p in bank::BANK {
+        assert!(seen.insert((p.category, p.name)), "{}/{}", p.category, p.name);
+    }
+}
+
+/// A preset load leaves the machine alone: settings, level and tuning.
+#[test]
+fn presets_leave_the_instrument_settings_alone() {
+    use truce_params::Params;
+    let infos = Youth106Params::default().param_infos();
+    let targets = bank::panel_targets(bank::BANK[0].params, &infos);
+    for p in [P::Master, P::Tune, P::Transpose, P::Voices, P::Oversample, P::Velocity, P::NoiseFloor, P::HwRes, P::BendDco, P::MidiMod] {
+        assert!(targets.iter().all(|(id, _)| *id != u32::from(p)));
+    }
+    assert!(targets.iter().any(|(id, _)| *id == u32::from(P::VcfFreq)));
+    assert!(targets.iter().any(|(id, _)| *id == u32::from(P::KeyMode)), "key mode belongs to the sound");
+}
+
+/// Saving, overwriting, reloading and deleting a user preset.
+#[test]
+fn user_preset_round_trips() {
+    use truce_params::Params;
+    let infos = Youth106Params::default().param_infos();
+    let root = std::env::temp_dir().join(format!("youth106-presets-{}", std::process::id()));
+    let _ = std::fs::remove_dir_all(&root);
+    let store = bank::user_store().with_user_root(&root);
+
+    let normalized = |id: u32| if id == u32::from(P::VcfFreq) { 0.25 } else { 0.5 };
+    let snapshot = bank::panel_snapshot(&infos, normalized);
+    assert!(snapshot.iter().all(|(id, _)| *id != u32::from(P::Master)), "master is not part of a sound");
+
+    let saved = bank::save_user(&store, "Round Trip", &snapshot).unwrap();
+    assert_eq!(bank::user_presets(&store).len(), 1);
+    bank::save_user(&store, "Round Trip", &snapshot).unwrap();
+    assert_eq!(bank::user_presets(&store).len(), 1, "same name overwrites");
+
+    let loaded = store.load(&saved.uuid).unwrap();
+    let freq = bank::panel_targets(&loaded.params, &infos).into_iter().find(|(id, _)| *id == u32::from(P::VcfFreq)).unwrap();
+    assert!((freq.1 - 0.25).abs() < 1e-6);
+
+    store.delete(&saved.uuid).unwrap();
+    assert!(bank::user_presets(&store).is_empty());
+    let _ = std::fs::remove_dir_all(&root);
+}
+
+/// Projects saved before presets existed hold no persisted name.
+#[test]
+fn state_without_a_preset_name_loads() {
+    use truce_params::Params;
+    let params = Youth106Params::default();
+    params.load_persist(&[]);
+    assert!(params.current_preset.lock().unwrap().is_empty());
+}

@@ -1,0 +1,29 @@
+uuid = "928994f6-9f6d-54e0-814b-6795b1c22536"
+name = "Yes I'm Changing Pad"
+author = "Jardim Sonoro"
+comment = "Tame Impala, Currents. Recipe, Reverb Machine; ENV and KYBD estimated"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = false
+25 = true
+26 = 0.2
+27 = 0.0
+30 = 2
+40 = 0.15
+41 = 0.2
+42 = 0
+43 = 0.25
+44 = 0.0
+45 = 0.5
+50 = 0
+51 = 0.8
+60 = 0.0
+61 = 0.5
+62 = 1.0
+63 = 0.4
+70 = 0

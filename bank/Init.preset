@@ -1,0 +1,7 @@
+uuid = "c838247e-cbe7-5700-9e36-d5679924e634"
+name = "Init"
+author = "Jardim Sonoro"
+comment = "Saw + pulse, filter open, Chorus I"
+
+[params]
+70 = 1

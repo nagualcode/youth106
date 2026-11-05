@@ -4,8 +4,10 @@
 //! VCF, VCA, ENV, CHORUS) with vertical faders. The bottom strip holds
 //! what the 106 has beside its keyboard (key assign, portamento, hold,
 //! bender) plus the arpeggiator and output. Settings swap into the
-//! bottom strip from the header.
+//! bottom strip from the header. The header also carries the preset
+//! bar; its browser page replaces the panel while open.
 
+mod browser;
 mod widgets;
 
 use std::sync::Arc;
@@ -17,6 +19,7 @@ use truce_egui::EguiEditor;
 
 use crate::Youth106Params;
 use crate::Youth106ParamsParamId as P;
+use browser::Browser;
 use widgets::theme::*;
 use widgets::{Ctx, fader, knob, meter, section, selector, small, toggle, value_box};
 
@@ -28,12 +31,14 @@ const HEADER_H: f32 = 34.0;
 const TOP_H: f32 = 234.0;
 const BOTTOM_H: f32 = 114.0;
 const FADER_H: f32 = 136.0;
+const PRESET_BAR_W: f32 = 300.0;
 
 pub const WIDTH: u32 = 1140;
 pub const HEIGHT: u32 = (HEADER_H + MARGIN + TOP_H + GAP + BOTTOM_H + MARGIN) as u32;
 
 pub fn editor(params: Arc<Youth106Params>) -> Box<dyn Editor> {
-    EguiEditor::new(params, (WIDTH, HEIGHT), draw)
+    let mut browser = Browser::new();
+    EguiEditor::new(params, (WIDTH, HEIGHT), move |ui: &mut egui::Ui, s: &Ctx| draw(ui, s, &mut browser))
         .with_visuals(visuals())
         .into_editor()
 }
@@ -59,15 +64,22 @@ fn inset(r: Rect, dx: f32, dy: f32) -> Rect {
     r.shrink2(vec2(dx, dy))
 }
 
-fn draw(ui: &mut egui::Ui, state: &Ctx) {
+fn draw(ui: &mut egui::Ui, state: &Ctx, browser: &mut Browser) {
     let full = ui.max_rect();
     ui.painter().rect_filled(full, CornerRadius::ZERO, BG);
 
     let settings_id = egui::Id::new("youth106-settings-open");
     let mut settings = ui.data(|d| d.get_temp::<bool>(settings_id).unwrap_or(false));
 
-    header(ui, state, full, &mut settings);
+    header(ui, state, full, &mut settings, browser);
     ui.data_mut(|d| d.insert_temp(settings_id, settings));
+
+    if browser.open {
+        let page = Rect::from_min_max(pos2(full.left() + MARGIN, full.top() + HEADER_H + MARGIN), pos2(full.right() - MARGIN, full.bottom() - MARGIN));
+        browser.page(ui, state, page);
+        ui.ctx().request_repaint();
+        return;
+    }
 
     let top_y = full.top() + HEADER_H + MARGIN;
     let mut x = full.left() + MARGIN;
@@ -109,7 +121,7 @@ fn draw(ui: &mut egui::Ui, state: &Ctx) {
 // Header
 // ---------------------------------------------------------------------------
 
-fn header(ui: &mut egui::Ui, state: &Ctx, full: Rect, settings: &mut bool) {
+fn header(ui: &mut egui::Ui, state: &Ctx, full: Rect, settings: &mut bool, browser: &mut Browser) {
     let p = ui.painter().clone();
     let bar = Rect::from_min_size(full.min, vec2(full.width(), HEADER_H));
     p.rect_filled(bar, CornerRadius::ZERO, PANEL);
@@ -126,19 +138,16 @@ fn header(ui: &mut egui::Ui, state: &Ctx, full: Rect, settings: &mut bool) {
     let w = g.size().x;
     p.galley(pos2(tx, bar.center().y - g.size().y / 2.0), g, TEXT);
     p.text(pos2(tx + w + 3.0, bar.center().y), Align2::LEFT_CENTER, "106", FontId::proportional(17.0), ACCENT);
-    p.text(
-        pos2(tx + w + 42.0, bar.center().y + 1.0),
-        Align2::LEFT_CENTER,
-        "POLYPHONIC SYNTHESIZER  ·  JARDIM SONORO",
-        small(10.0),
-        DIM,
-    );
+    let presets = Rect::from_min_size(pos2(tx + w + 40.0, bar.top() + 6.0), vec2(PRESET_BAR_W, 22.0));
+    browser.bar(ui, state, presets);
+    p.text(pos2(presets.right() + 16.0, bar.center().y + 1.0), Align2::LEFT_CENTER, "POLYPHONIC SYNTHESIZER  ·  JARDIM SONORO", small(10.0), DIM);
 
     // Settings button.
     let btn = Rect::from_min_size(pos2(bar.right() - MARGIN - 78.0, bar.top() + 7.0), vec2(78.0, 20.0));
     let resp = ui.interact(btn, ui.id().with("settings-btn"), Sense::click());
     if resp.clicked() {
         *settings = !*settings;
+        browser.open = false;
     }
     let fill = if *settings { ON } else if resp.hovered() { CONTROL_HOVER } else { CONTROL };
     p.rect_filled(btn, CornerRadius::same(2), fill);

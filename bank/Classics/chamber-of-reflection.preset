@@ -1,0 +1,30 @@
+uuid = "eeae5d4f-ce0a-5e3e-90eb-6b8f63e7e9d0"
+name = "Chamber of Reflection"
+author = "Jardim Sonoro"
+comment = "Mac DeMarco, Salad Days. JX-3P on record; Juno recipe, Reverb Machine"
+
+[params]
+10 = 0.1191
+11 = 0.1221
+20 = 1
+21 = 0.13
+22 = 0.0
+23 = 1
+24 = true
+25 = false
+26 = 0.5
+27 = 0.0
+30 = 2
+40 = 0.6
+41 = 0.4
+42 = 0
+43 = 0.2
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.7
+62 = 0.0
+63 = 0.55
+70 = 1

@@ -12,11 +12,12 @@
 //!   through hidden proxy params (`IMidiMapping`), as VST3 requires.
 //! - Hold and the sustain pedal are independent: either one holds notes.
 
-use std::sync::Arc;
+use std::sync::{Arc, Mutex};
 
 use truce::prelude::*;
 use truce_core::midi::{norm_7bit, norm_pitch_bend};
 
+pub mod bank;
 pub mod dsp;
 mod ui;
 
@@ -356,6 +357,10 @@ pub struct Youth106Params {
     #[param(id = 122, name = "Sustain Pedal", range = "linear(0, 1)", default = 0.0,
             flags = "hidden | automatable", midi_cc = 64)]
     pub midi_sustain: FloatParam,
+
+    /// Bank entry the panel was last loaded from, "category/name".
+    #[persist]
+    pub current_preset: Mutex<String>,
 
     #[meter]
     pub meter_l: MeterSlot,

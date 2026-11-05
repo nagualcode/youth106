@@ -1,0 +1,29 @@
+uuid = "985d080a-6430-5782-a38d-e03cca62c39c"
+name = "Jewelry"
+author = "Jardim Sonoro"
+comment = "Blood Orange. Recipe, Reverb Machine"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = false
+25 = true
+26 = 0.4
+27 = 0.0
+30 = 1
+40 = 0.4
+41 = 0.0
+42 = 0
+43 = 0.4
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.6
+61 = 0.9
+62 = 0.6
+63 = 0.7
+70 = 0

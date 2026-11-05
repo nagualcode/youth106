@@ -1,0 +1,29 @@
+uuid = "3a1564e2-d55d-53c9-9b3a-2c2a39c7a118"
+name = "For the First Time Lead"
+author = "Jardim Sonoro"
+comment = "Mac DeMarco. Recipe, Reverb Machine: On the Level + square, filters to 7, longer release"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = true
+25 = true
+26 = 1.0
+27 = 0.0
+30 = 3
+40 = 0.7
+41 = 0.3
+42 = 0
+43 = 0.3
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.2
+61 = 0.7
+62 = 0.0
+63 = 0.8
+70 = 1
