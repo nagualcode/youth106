@@ -1,0 +1,30 @@
+uuid = "f32efe5f-ffff-5f88-89b8-317c068f816d"
+name = "A58 PWM Chorus"
+author = "Roland (Juno-60 factory)"
+comment = "Close to the synth line of Sweet Dreams (Eurythmics) (Synthmania)"
+
+[params]
+10 = 0.0361
+11 = 0.9843
+20 = 1
+21 = 0.0
+22 = 0.811
+23 = 0
+24 = true
+25 = false
+26 = 1.0
+27 = 0.0
+30 = 1
+40 = 0.8008
+41 = 0.0
+42 = 0
+43 = 0.0
+44 = 0.0
+45 = 1.0
+50 = 0
+51 = 0.1181
+60 = 0.1699
+61 = 0.0049
+62 = 1.0
+63 = 0.666
+70 = 2

@@ -1,0 +1,29 @@
+uuid = "2b16efcb-38b4-5811-bc97-86a1c0ff183d"
+name = "Reality in Motion Vibrato"
+author = "Jardim Sonoro"
+comment = "Tame Impala, Currents. Recipe, Reverb Machine: CS-80 style brass on a Juno"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.2
+22 = 0.0
+23 = 1
+24 = false
+25 = true
+26 = 1.0
+27 = 0.0
+30 = 1
+40 = 0.0
+41 = 0.3
+42 = 0
+43 = 0.7
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.7
+61 = 0.5
+62 = 0.8
+63 = 0.5
+70 = 2

@@ -1,0 +1,30 @@
+uuid = "66fff7cd-a40d-5bf8-b29b-cd96d05073b8"
+name = "A64 Snare Drum"
+author = "Roland (Juno-106 factory)"
+comment = "Reminded Synthmania of the opening of Decades (Joy Division)"
+
+[params]
+10 = 0.4094
+11 = 0.2126
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = false
+25 = false
+26 = 0.5039
+27 = 0.7165
+30 = 1
+40 = 0.7402
+41 = 0.0866
+42 = 0
+43 = 0.1339
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.7953
+60 = 0.0
+61 = 0.1969
+62 = 0.0
+63 = 0.2362
+70 = 0

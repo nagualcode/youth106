@@ -3154,10 +3154,11 @@ checksum = "e450f9b2ed1dff33c94c12589a87338689467b9c4f5d8a5710bd09a847d2c8a7"
 
 [[package]]
 name = "youth106"
-version = "0.1.1"
+version = "0.2.0"
 dependencies = [
  "clap-sys",
  "egui",
+ "toml",
  "truce",
  "truce-au",
  "truce-clap",
@@ -3167,6 +3168,7 @@ dependencies = [
  "truce-params",
  "truce-standalone",
  "truce-test",
+ "truce-utils",
  "truce-vst3",
 ]
 

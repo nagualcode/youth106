@@ -209,7 +209,7 @@ pub fn knob(ui: &mut egui::Ui, state: &Ctx, cell: Rect, id: impl Into<u32>, labe
     p.text(pos2(cell.center().x, cell.bottom()), Align2::CENTER_BOTTOM, text, small(10.0), if active { ACCENT } else { TEXT });
 }
 
-fn button_face(p: &egui::Painter, rect: Rect, on: bool, hovered: bool, text: &str, size: f32) {
+pub fn button_face(p: &egui::Painter, rect: Rect, on: bool, hovered: bool, text: &str, size: f32) {
     let fill = if on {
         ON
     } else if hovered {
@@ -321,4 +321,14 @@ pub fn meter(ui: &egui::Ui, rect: Rect, l: f32, r: f32) {
         let y = db_to_y(db);
         p.line_segment([pos2(rect.right() - 10.0, y), pos2(rect.right() - 6.0, y)], Stroke::new(1.0_f32, DIM));
     }
+}
+
+/// Momentary button; true on the frame it is clicked.
+pub fn action_button(ui: &mut egui::Ui, rect: Rect, key: &str, text: &str, color: Color32) -> bool {
+    let resp = ui.interact(rect, ui.id().with(("action", key)), Sense::click());
+    let p = ui.painter();
+    p.rect_filled(rect, CornerRadius::same(2), if resp.hovered() { CONTROL_HOVER } else { CONTROL });
+    p.rect_stroke(rect, CornerRadius::same(2), Stroke::new(1.0_f32, color.gamma_multiply(0.6)), StrokeKind::Inside);
+    p.text(rect.center(), Align2::CENTER_CENTER, text, small(9.0), TEXT);
+    resp.clicked()
 }

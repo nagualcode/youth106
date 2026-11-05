@@ -1,0 +1,29 @@
+uuid = "e9358698-cdb5-5b0a-ae46-3d5261186ad9"
+name = "She Just Won't Believe Me"
+author = "Jardim Sonoro"
+comment = "Tame Impala. Reverb Machine: all oscillators, filters open, chorus; push VCA LEVEL to overdrive"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = true
+25 = true
+26 = 1.0
+27 = 0.0
+30 = 1
+40 = 1.0
+41 = 0.0
+42 = 0
+43 = 0.0
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.2
+60 = 0.0
+61 = 0.5
+62 = 1.0
+63 = 0.3
+70 = 1

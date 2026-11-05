@@ -1,0 +1,30 @@
+uuid = "bc815ab7-7cea-5bc6-abd8-7d8fcae008dd"
+name = "A21 Organ I"
+author = "Roland (Juno-106 factory)"
+comment = "Leslie effect made with PWM, chorus off"
+
+[params]
+10 = 0.4252
+11 = 0.1181
+20 = 0
+21 = 0.0
+22 = 0.5048
+23 = 0
+24 = true
+25 = false
+26 = 0.1811
+27 = 0.0
+30 = 0
+40 = 0.3386
+41 = 0.5984
+42 = 0
+43 = 0.1102
+44 = 0.0079
+45 = 1.0
+50 = 1
+51 = 0.7874
+60 = 0.0
+61 = 0.0787
+62 = 0.6457
+63 = 0.0
+70 = 0

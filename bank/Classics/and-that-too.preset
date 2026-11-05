@@ -1,0 +1,29 @@
+uuid = "dea487f2-a348-58d8-959e-cbe7daf92466"
+name = "And That, Too"
+author = "Jardim Sonoro"
+comment = "BADBADNOTGOOD, IV. Recipe, Reverb Machine"
+
+[params]
+10 = 0.2
+20 = 1
+21 = 0.0
+22 = 0.9
+23 = 1
+24 = true
+25 = false
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 0.6
+41 = 0.5
+42 = 0
+43 = 0.0
+44 = 0.35
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.4
+61 = 0.5
+62 = 0.8
+63 = 0.4
+70 = 1

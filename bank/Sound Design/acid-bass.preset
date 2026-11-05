@@ -1,0 +1,31 @@
+uuid = "a9f3942f-8bef-5c8f-9d5b-760c23a3cf7a"
+name = "Acid Bass"
+author = "Jardim Sonoro"
+comment = "Roland, Creating JUNO Basses: 8' square, Freq 23/255, Res 204/255, Mono, porta ~20%; add drive and delay"
+
+[params]
+10 = 0.3
+20 = 1
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = true
+25 = false
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 0.0902
+41 = 0.8
+42 = 0
+43 = 0.5
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.4
+60 = 0.0
+61 = 0.3
+62 = 0.0
+63 = 0.0196
+70 = 0
+83 = 0
+84 = 0.2

@@ -1,0 +1,30 @@
+uuid = "903e32a3-bc39-551b-9eaa-77705bdad8cc"
+name = "B11 Low Strings"
+author = "Roland (Juno-60 factory)"
+comment = "Reminded Synthmania of Deep Honey (Goldfrapp)"
+
+[params]
+10 = 0.0293
+11 = 0.7323
+20 = 1
+21 = 0.1016
+22 = 0.6535
+23 = 0
+24 = true
+25 = true
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 0.6357
+41 = 0.0
+42 = 0
+43 = 0.0399
+44 = 0.0
+45 = 0.8031
+50 = 0
+51 = 0.3701
+60 = 0.8154
+61 = 0.9336
+62 = 0.5591
+63 = 0.7363
+70 = 2

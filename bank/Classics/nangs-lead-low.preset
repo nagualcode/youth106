@@ -1,0 +1,29 @@
+uuid = "6480d88f-6710-5408-9b6d-da3be2c819b7"
+name = "Nangs Lead Low"
+author = "Jardim Sonoro"
+comment = "Tame Impala, Currents. Recipe, Reverb Machine: saw + LFO pulse, vibrato; levels estimated"
+
+[params]
+10 = 0.5
+20 = 1
+21 = 0.2
+22 = 0.5
+23 = 0
+24 = true
+25 = true
+26 = 0.0
+27 = 0.0
+30 = 1
+40 = 0.8
+41 = 0.0
+42 = 0
+43 = 0.0
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.5
+62 = 1.0
+63 = 0.3
+70 = 0

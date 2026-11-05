@@ -1,0 +1,29 @@
+uuid = "29fa68c4-8b29-58ff-a330-0a387e22c942"
+name = "Tech House Bass"
+author = "Jardim Sonoro"
+comment = "Roland, Creating JUNO Basses: 16' square, sub 54/255, Freq ~80, Env 45; add 1/8D delay"
+
+[params]
+10 = 0.3
+20 = 0
+21 = 0.0
+22 = 0.0
+23 = 1
+24 = true
+25 = false
+26 = 0.2118
+27 = 0.0
+30 = 1
+40 = 0.3137
+41 = 0.0
+42 = 0
+43 = 0.1765
+44 = 0.0
+45 = 0.0
+50 = 0
+51 = 0.5
+60 = 0.0
+61 = 0.2353
+62 = 0.0
+63 = 0.2353
+70 = 0
